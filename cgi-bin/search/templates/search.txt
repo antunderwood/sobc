@@ -1,0 +1,8 @@
+Searching for "<!--cgi: query_str-->"
+<!--cgi: results_num--> matches, searched <!--cgi: docs_total--> documents <!--cgi: search_time-->
+<!--cgi: ignored_terms-->
+<!--loop: results-->
+[<!--item: rank-->]. <!--item: title--> (<!--item: url-->)
+ <!--item: description-->
+ Score: <!--item: score-->, Date: <!--item: date-->, Size: <!--item: size--> kB
+<!--end: results-->

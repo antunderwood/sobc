@@ -1,0 +1,20 @@
+# List of files that should not be indexed by Perlfect Search.
+# -list only one file or directory per line
+# -you can use * as a joker
+# -re-run indexer.pl after modifying this list
+
+/home/example/example.com/html/secret_directory/*
+/cgi-bin/*
+/perllibs/*
+/edit/*
+/css/*
+/images/*
+/mason/*
+/php/*
+/FCKeditor1/
+/index.mhtml
+/index1.html
+/index2.html
+/index-backup.html
+/index-original.html
+_*

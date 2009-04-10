@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<style type="text/css" media="all">
+		@import "sobc.css";
+	</style>
+	<title>South Oxhey Baptist Church</title>
+	<script language="javascript">
+	sfHover = function() {
+		var sfEls = document.getElementById("linkList").getElementsByTagName("LI");
+		for (var i=0; i<sfEls.length; i++) {
+			sfEls[i].onmouseover=function() {
+				this.className+=" sfhover";
+			}
+			sfEls[i].onmouseout=function() {
+				this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+			}
+		}
+	} 
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+	</script>
+</head>
+
+
+
+<body id="sobc">
+
+<div id="container">
+	<div id="top">
+		<div id="pageHeader">
+			<h1>South Oxhey<br>Baptist Church</h1>
+			<h2></h2>
+		</div>
+	
+
+		<div id="logo">
+			<p class="p1"><span>A demonstration of what can be accomplished visually through <acronym title="Cascading Style Sheets">CSS</acronym>-based design. Select any style sheet from the list to load it into this page.</span></p>
+		</div>
+%if ($r->uri=~/\/cgi-bin\/mason_handler\.cgi\/holding\/index.html/) {
+		
+		<div id="intro">
+			<h3><span>Church Mission Statement</span></h3>
+			<p class="p1"><span>This is where we would put stuff about the church</span></p>
+			<p class="p2"><span>For example what we believe in</span></p>
+			<p class="p3"><span>Or our aims</span></p>
+		</div>
+%}		
+
+	</div>
+%$m->call_next;
+	<div id="footer">
+		140 Gosforth Lane South Oxhey WD19 7BX: 0208 421 4054
+	</div>
+
+	
+	<div id="linkList">
+		<!--extra div for flexibility - this list will probably be the trickiest spot you'll deal with -->
+		<div id="linkList2">
+
+		<!-- If you're wondering about the extra &nbsp; at the end of the link, it's a hack to meet WCAG 1 Accessibility. -->
+		<!-- I don't like having to do it, but this is a visual exercise. It's a compromise. -->
+			<div id="lselect">
+				<h3 class="sunday"><span>Sunday<br>Services:</span></h3>
+				<!-- list of links begins here. There will be no more than 8 links per page -->
+				<ul>
+					<li><a href="http://csszengarden.com/" title="AccessKey: a" accesskey="a">This Week</a>
+					<li><a href="http://csszengarden.com/" title="AccessKey: b" accesskey="b">First Sundays</a>
+					<li><a href="http://csszengarden.com/" title="AccessKey: c" accesskey="c">Sparklers</a>
+					<li><a href="http://csszengarden.com/" title="AccessKey: d" accesskey="d">G-Team</a>
+					<li><a href="http://csszengarden.com/" title="AccessKey: e" accesskey="e">Action Attack</a>
+					<li><a href="http://csszengarden.com/" title="AccessKey: f" accesskey="f">Focus</a>
+				</ul>
+			</div>
+
+			<div id="mid_week">
+				<h3 class="archives"><span>Mid-Week<br>Activities</span></h3>
+				<ul>
+					<li><a href="http://csszengarden.com/" title="View next set of designs. AccessKey: n" accesskey="n">Rendezvous »</a>&nbsp;</li>
+					<li><a href="http://csszengarden.com/" title="View previous set of designs. AccessKey: p" accesskey="p">The Max »</a></li>
+					<li><a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden. AccessKey: w" accesskey="w">Wednesday Whizz Kids »</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+
+</div>
+
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<!-- Add a background image to each and use width and height to control sizing, place with absolute positioning -->
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
+<div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body></html>

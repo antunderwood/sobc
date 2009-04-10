@@ -1,0 +1,148 @@
+3.31 (Daniel Naber <daniel.naber@t-online.de>):
+* support robots.txt when indexing via http (thanks to Jerrad Pierce)
+* support for external filters, e.g. antiword for MS-Word (thanks to Klaus Weidner)
+* new option $MAX_RESULTS to limit the number of matches
+* search.pl: date of last index update now appears in the (English) result page
+* search.pl: escape include/exclude in 'Next Page' URL (bug found by Herbert Braun)
+* search.pl: improved recognition of ignored words for AND search
+* search.pl: improved escaping of "highlight matches" link
+* indexer.pl: index frames (even without noframe) (patch by Vlad Romanenko)
+* indexer.pl: display files' size when indexing
+* indexer.pl: fixed progress bar (was too long sometimes)
+* indexer.pl: improved indexing via index_form.html:
+  -no more attempts to download the result
+  -display warnings if $HTTP_DEBUG is turned on
+
+3.30 (Daniel Naber <daniel.naber@t-online.de>):
+* added Italian stopwords (Davide Bortoli)
+* use meta robot tags for local files, too (except nofollow) (bug found by Frank Naude)
+* search.pl: don't remove newlines when highlighting a text file (bug found by Frank Naude)
+
+3.30beta (Daniel Naber <daniel.naber@t-online.de>):
+* search.pl: show documents with highlighted search terms, see 
+  the README for some known limitations with some constructs in HTML
+* search.pl: warn user if he searches for stopwords
+* search.pl: optionally higher ranking for more recent documents (new form field "penalty")
+* search.pl: optionally include/exclude files at search-time (new form fields "include", "exclude")
+* search.pl: fixed emphasis of words with special characters in result page
+* search.pl: can now be called from the command line like this: ./search.pl "term1 term2"
+* indexer.pl: indexing speed improved 20-50%
+* indexer.pl: Show number of excluded files (conf/no_index.txt)
+* indexer.pl: Fixed a false "Cannot remove..." warning (Daniel Quappe)
+* indexer.pl: XHTML meta tags correctly recognized now
+* indexer.pl: correct size of PDF files (Cameron Moore)
+* indexer.pl: always store correct title with HTML+PDF (Cameron Moore)
+* indexer.pl: preparation for indexing more than one remote server - please don't use
+  this yet, as robots.txt is not supported yet!!
+* SGMLEntities.pl renamed to tools.pl
+* French templates (Max Attems)
+* Italian templates (Davide Bortoli)
+* New English template with new layout and information about total number of documents
+* The English templates are now valid XHTML 1.0 Transitional
+* Store and display the last-modified date of the documents
+* All scripts now *really* use the -w option (should have been in 3.20 but wasn't)
+
+3.20 (Daniel Naber <daniel.naber@t-online.de>):
+* indexer.pl can now be called via web, using index_form.html. You need
+  to set $INDEXER_CGI_PASSWORD in conf.pl.
+* URI::Escape not necessary anymore
+* robot meta tags now work (but only for getting files via http!)
+* Option $HTTP_MAX_PAGES to avoid the indexer running into an endless loop (only for 
+  getting files via http)
+* search.pl: fixed some warnings (Jim Hall)
+* search.pl: ignore stopwords (David Turley)
+* search.pl: don't escape characters twice when using indexer_web.pl (Matthias E. Zeitler)
+* DB_File is now required, not just recommended
+* uses less memory than 3.20beta
+
+3.20beta (Daniel Naber <daniel.naber@t-online.de>):
+* For more than one term, logical AND is now default. This can easily be changed to OR (which is 
+  the old behaviour) by using a select box as shown in search_form.html.
+  "Any words" = OR, "All words" = AND.
+  +/- operators are still working, it's just the default that has changed.
+* Added HTTP_* options to allow indexing of files via http. This is necessary if at least
+  some of your pages' content is dynamically generated, e.g. via PHP. Please use this
+  only on your own servers to avoid waste of bandwidth.
+* Search speed for many documents (>1000) in combination with +/- operators *much* improved
+* new option $LOW_MEMORY_INDEX: Indexing is now much faster. If the increased memory usage
+  is a problem for you, set $LOW_MEMORY_INDEX = 1 to get the old behaviour.
+* new options $CONTEXT_SIZE, $CONTEXT_EXAMPLES, $CONTEXT_DESC_WORDS: show context of matches.
+  This requires a big index, so it's off by default.
+* new option PERCENTAGE_RANKING: ranking is now by default shown as a percentage value
+* new option $IGNORE_TEXT_START/END to completely exclude parts of documents
+* new option $PDFTOTEXT to index PDF files with a PDF to ASCII tool like pdftotext
+* new options $TITLE_WEIGHT, %H_WEIGHT to make titles/headlines have more "weight", i.e. lead 
+  to a higher score
+* new option $LOG to log queries. This defaults to off. It writes to data/log.txt, which has 
+  to exist and must be writeable (setup.pl will *not* do that for you)
+* new option $MULTIPLE_MATCH_BOOST to increase the score if more than one word is matched
+  in a document (defaults to off)
+* indexer.pl: file paths in conf/no_index.txt don't have to be absolute anymore
+* indexer.pl: bugfix: meta tags now always recognised even if split to more than one line
+* indexer.pl: hopefully fixed a bug where the result link always pointed to "/" (Windows only)
+* indexer.pl/search.pl: inv_index_db is now much smaller (by using 16 bit integer for weight and document id)
+* indexer.pl: trashed old index files are now deleted so they cannot confuse indexer.pl
+* search.pl: filenames are now escaped with URI::Escape
+* search.pl/templates: file sizes are now remembered and included on the results page
+* templates/no_match(_de).html: special page with tips if no matches were found
+* better documentation of source code
+
+3.10 (Daniel Naber <daniel.naber@t-online.de>):
+* SECURITY fix in search.pl: no more cross site scripting attacks possible
+
+3.09 (Daniel Naber <daniel.naber@t-online.de>):
+* setup.pl: Bugfixes: other filetypes had no quotes, filetypes y/n answer not recognized, typo fixed
+* setup.pl: security: indexer.pl now only executable by owner after installation
+* setup.pl: conf.pl is loaded and modified (instead of repeating the contents of conf.pl in setup.pl)
+* indexer.perl/conf.pl: applied weight-meta-alt-headline-filename.diff:
+  -Perlfect Search now does not only show the meta description on the result page but takes it as content,
+   so you can search for meta 'description' ('keywords' and 'author', too)
+  -You can weight the meta, title and headline tags
+  -Images' alt="..." values are now also treated as content
+  -Optionally, the document's URL can be treated as content so you can search for filenames (but as
+   for any text, no special characters like '/' etc are indexed). 
+* indexer.pl: don't get confused by html tags inside comments
+* indexer.pl/search.pl/SGMLEntities.pl: handle umlauts and accented characters correctly
+* search.pl: should now work with mod_perl (to use tainting, see the comment in search.pl)
+* search.pl/conf.pl: i18n: you can now have one results template for every language you support,
+  templates/search_de.html is an example
+* search.pl/indexer.pl/setup.pl: should now work better under Windows NT, e.g. DB hashes get untied()'d
+  before they're deleted. Also see the comments in search.pl. setup.pl can now copy files under Windows
+  thanks to File::Copy
+
+3.08:
+* indexer.pl: Use temporary df files while creating a new index. This way the old index is available for searching (Dobrica Pavlinusic).
+* indexer.pl: $step cannot be less than 1. (Dobrica Pavlinusic).
+* indexer.pl: New stopwords mechanism. Create one regex instead of matching each stopword individually (Ned Konz).
+* indexer.pl: Hoisted repeated DB access out of the per-word loop in main::weights (Ned Konz).
+* indexer.pl: Faster regex's for normalize including proper splicing for hyphenated words (Ned Konz).
+* indexer.pl: Optional indexing of numbers by setting of $INDEX_NUMBERS in conf.pl.
+* indexer.pl: Remove carriage returns (\r) when loading conf/* files. (Thomas Shaun)
+* indexer.pl: Add installation directory to @INC so that the script can be invoked for different dirs. (David Fuentes)
+* conf.pl: Added $INDEX_NUMBERS configuration variable.
+* search.pl: New normalize() with faster regex's including proper splicing of hyphenated words (Ned Konz).
+* search.pl: Add installation directory to @INC so that the script can be invoked for different dirs. (David Fuentes)
+
+3.05:
+* search.pl: Ignore stemming if $STEMCHARS == 0; otherwise any search would return 0 matches.
+
+3.04:
+* search.html : renamed it to search_form.html not to be confused with the template file.
+* search.pl : Changed 'tie' statements to tie to AnyDBM_File objects instead of DB_File objects.
+* setup.pl: Now the default $STEMCHARS is zero which ignores stemming altogether.
+
+3.03:
+* indexer.pl: Optimizations in the normalize() function(replacing s/// by equivalent tr///).
+* indexer.pl: Replaced the stem() function by inline substr.
+
+3.02:
+* search.pl: Changed the flags used to tie the db files from O_NONBLOCK to O_RDONLY.
+* conf.pl: Moved the $VERSION variable to the conf.pl file.
+* indexer.pl: Fixed typo O_NONBLOBK to O_NONBLOCK.
+
+3.01: 
+* search.pl: used DB_File instead of AnyDBM_File which caused problems on
+  machines that didn't have DB_File installed. This has been fixed.
+* conf.pl: Added useful comments in conf.pl for people configuring the script
+  manually.
+* indexer.pl: Remove tf_db and df_db after indexing to free up space.	

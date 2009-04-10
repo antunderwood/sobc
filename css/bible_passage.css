@@ -1,0 +1,17 @@
+#passage {
+	font-size: 16px;
+	background-color: #CCFFFF;
+	line-height: 20px;
+}
+.bibleLink {
+	font-size: 12px;
+	background-color: #ffffff;
+}
+.bibleLink span{
+	color: #0083FF;
+	font-weight: bold;
+	text-decoration: underline
+}
+.bibleLink span:hover{
+	text-decoration: none;
+}

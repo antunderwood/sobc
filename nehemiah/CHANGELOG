@@ -1,0 +1,154 @@
+my little forum changelog
+-------------------------
+
+2.0.2 (2009-01-31)
+------------------
+- Fixed incorrect closing h2 tag in 
+  templates/default/subtemplates/thread.tpl.inc
+- Fixed bug with ajax preview in Google Chrome
+
+2.0.1 (2009-01-16)
+------------------
+- fixed bug with username maximum length
+  (http://mylittleforum.net/forum/index.php?id=3547)
+- implemented search for users by username and e-mail
+  (http://mylittleforum.net/forum/index.php?id=3547)
+
+2.0 (2008-12-27)
+----------------
+- updated Smarty (version 2.6.22)
+- Turkish language file added
+
+2.0 RC 8 (2008-11-23)
+---------------------
+- updated Smarty (version 2.6.20)
+- Norwegian language file added
+
+2.0 RC 7 (2008-10-19)
+---------------------
+- fixed bug in includes/register.inc.php
+  (http://mylittleforum.net/forum/index.php?id=3343)
+- added category element in rss feed
+- minor structural changes in includes/posting.inc.php and 
+  templates/default/subtemplates/posting.tpl.inc
+
+2.0 RC 6 (2008-09-21)
+---------------------
+- fixed bug in lock thread feature 
+  (http://mylittleforum.net/forum/index.php?id=3307)
+- fixed bug where, when accessing an entry as not logged in user and the forum 
+  is accessible by registered users only, the redirect to the login form and 
+  back to the entry didn't work
+  (http://mylittleforum.net/forum/index.php?id=3323)
+- language file corrections
+- Chinese language file added
+
+2.0 RC 5 (2008-09-04)
+---------------------
+- fixed bug where, when editing a reply the category was deleted
+  (http://mylittleforum.net/forum/index.php?id=3202)
+- changed ajax preview in order that the preview bubble does not remain in the 
+  DOM when not needed
+- renamed file js/javascripts.js into js/main.js
+- added setting "forum_readonly"
+- added setting "tags"
+- added Danish language file
+
+2.0 RC 4 (2008-08-09)
+---------------------
+- All e-mails are sent now by one central function ("my_mail")
+- Subject and text length limitation for e-mails implemented
+- Added "accept-charset" to all forms
+- added prompt to enter a URL on the [img] bbcode button if no text was selected
+  (http://mylittleforum.net/forum/index.php?id=3071)
+- If the session expires while writing a message the text is displayed now after 
+  submitting the form so that you're able to "rescue" it.
+- updated the PHP Akismet Class (0.3.4)
+- removed the	variable "p_user_id" from includes/posting.inc.php and 
+  templates/default/subtemplates/posting.tpl.inc
+- fixed bug where, in the list of registered users the status "online" was not 
+  displayed
+- fixed CSS bug where, in IE6 the avatars were not displayed in opened 
+  complete threads (http://mylittleforum.net/forum/index.php?id=3091)
+- locking of individual postings implemented
+  (http://mylittleforum.net/forum/index.php?id=2897)
+- minor code and template changes
+
+2.0 RC 3 (2008-07-20)
+---------------------
+- changed naming of uploaded images
+  (http://mylittleforum.net/forum/index.php?id=2994)
+- changed setting "user_online_counter" (carries length of time period now)
+- fixed utf-8 issues with e-mail headers
+- fixed bug where, when editing a posting as unregistered user (if enabled) the 
+  terms of use agreement checkbox was not displayed (if enabled)
+- added German language file
+
+2.0 RC 2 (2008-07-08)
+---------------------
+- added "Open in thread" link (http://mylittleforum.net/forum/index.php?id=2804)
+- implemented time-frame (request of form until form submit) to complicate 
+  automated form submissions
+- fixed some utf-8 issues (missing charset in e-mails, using multibyte string 
+  functions)
+- minor template improvements
+- updated Bad Behavior (2.0.16)
+- updated GeSHi (1.0.7.22)
+- updated BBCode Parser Class (0.3.3)
+
+2.0 RC 1 (2008-05-31)
+---------------------
+- New BB Codes [pre][/pre] (http://mylittleforum.net/forum/index.php?id=2725)
+  and [monospace][/monospace] (http://mylittleforum.net/forum/index.php?id=2737)
+- Keeping position within main page when going back in Firefox 
+  (http://mylittleforum.net/forum/index.php?id=2747)
+- Some of the corrections posted here
+  http://mylittleforum.net/forum/index.php?id=2796
+
+2.0 beta 26 (2008-04-06)
+------------------------
+- fixed bug concerning email contact 
+  (http://mylittleforum.net/forum/index.php?id=2516)
+- changed behavior in email contact (no more confirmation to sender) 
+  (http://mylittleforum.net/forum/index.php?id=2485)
+- structural change in templates: subtemplates stored in subfolder 
+  "subtemplates" now  
+
+2.0 beta 25 (2008-02-27)
+------------------------
+- The minimum password length can be defined now (Advanced settings:
+  min_pw_length).
+- Passwords are saved as salted SHA1 hashes now (to ensure downward 
+  compatibility the old MD5 hashes are still valid).
+- updated Smarty (version 2.6.19)
+
+2.0 beta 24 (2008-02-11)
+------------------------
+- The new e-mail address has to be confirmed now when changing the e-mail 
+  adrress.
+- Fixed bug concerning incorrect thread tree times in opened posting 
+  (http://mylittleforum.net/forum/index.php?id=2361)
+- implemented current version of the strinparser bb code class (0.3.2b)
+  (http://mylittleforum.net/forum/index.php?id=2362)    
+
+2.0 beta 23 (2008-01-25)
+------------------------
+- new function to move postings / split threads
+
+2.0 beta 22 (2008-01-22)
+------------------------
+- fixed bug in includes/index.inc.php (empty user names of registered users
+  in latest postings)
+- fixed bug in includes/posting.inc.php (empty user names of registered users
+  in subnavigation) 
+- fixed bug in includes/functions.inc.php (empty user names of registered users
+  in notification e-mails)
+- corrected language varable name (bbcode_link_url_marking --> bbcode_link_url)
+
+2.0 beta 21 (2008-01-19)
+------------------------
+- fixed bug in RSS feed (user names of registered users were not displayed 
+  since version 2.0 beta 20)
+- new user search in user area
+- by default, the e-mail address of new users is not contactable; the default
+  value can be set in the advanced settings (default_email_contact)

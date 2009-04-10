@@ -1,0 +1,362 @@
+
+                   Perlfect Search 3.31 README documentation
+
+   This README file contains instructions for installing, customizing and
+   using Perlfect Search.
+
+Table of Contents
+
+     * License
+     * Requirements
+     * Installation
+     * Indexing your site
+     * Putting a search box on your pages
+     * Customizing the results page
+     * Highlighting matched terms
+     * Excluding directories or files from the index
+     * Searching
+     * Find out more
+
+   If you have trouble installing or using Perlfect Search please consult
+   [11]the FAQ first to see if that gives a solution to your
+   problem/question. If you cannot find the answer to your problem, or if
+   you think you have found a bug, or if you have a suggestion or
+   contribution to make, please [12]subscribe to the mailing list.
+
+License
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the [13]GNU General Public License as published
+   by the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+
+Requirements
+
+     * A webserver that lets you execute CGI scripts
+     * Perl 5.004 or higher
+     * DB_File 1.72 module ([14]Source/[15]ActiveState Perl) -- before
+       you download it, try if Perlfect Search works without. DB_File may
+       already be installed by default.
+     * The following modules are only necessary if you want to fetch the
+       pages you want to index via http. Note that some or all modules
+       may already be installed on your system, so you should first try
+       if it works without installation. If you are on Windows and you
+       are using [16]ActivateState Perl you can install missing modules
+       with [17]PPM: type ppm, then install <package_name>. Otherwise
+       download the sources linked here (the version number is the
+       minimum version, more recent versions should work, too):
+          + [18]MIME::Base64 2.11
+          + [19]Digest::MD5 2.20
+          + [20]URI 1.10
+          + [21]HTML::Tagset 3.03
+          + [22]HTML::Parser 3.15
+          + [23]LWP::libwww-perl 5.50
+       If you have never before installed a Perl module you may want to
+       read [24]How to install modules (or, alternatively, [25]Installing
+       CPAN Modules).
+
+Installation
+
+   The easiest way to install Perlfect Search is to use the setup utility
+   that comes with this distribution:
+    1. Open the compressed archive you downloaded with a suitable
+       compression tool (e.g. tar and gunzip for Linux/Unix, Winzip for
+       Windows). A directory search-3.31 will be created with all the
+       program files in it.
+    2. Upload the directory to your account if it is hosted on a remote
+       machine using FTP or scp (secure copy). Don't upload it inside
+       your cgi-bin directory, rather put it in a temporary place. The
+       setup utility will take care of copying everything in appropriate
+       locations.
+    3. Login to your account using ssh/telnet if it is on a remote
+       system.
+    4. Go inside the distribution directory that you just uploaded.
+    5. Run the setup utility with the following command: perl setup.pl
+    6. The setup utility will then guide you through the rest of the
+       installation process.
+    7. Go to the installation directory (e.g. cgi-bin/perlfect/search)
+       and try to run perl indexer.pl.
+    8. When everything works, you can delete the temporary search-3.31
+       directory.
+
+   If you have trouble running the setup utility, or if you prefer to
+   manually install and configure the application for some reason, your
+   best bet is to upload the entire directory somewhere in your cgi-bin,
+   setting permissions of most files/dirs to world-readable
+   world-executable (755 for Linux/Unix systems, note that only
+   indexer.pl should be 700, setup.pl should be removed) and then
+   modifying the file conf.pl with a text editor to match the setup of
+   your site. If you install manually, then you probably know what you
+   are doing and the configuration file conf.pl should be
+   self-explanatory. If you don't know what you are doing then you
+   shouldn't be installing manually!
+
+   If you don't have telnet/ssh access to your server, you cannot use our
+   automatic setup utility. You can still make all necessary changes to
+   conf.pl on your local disk and then upload everything via FTP or scp.
+   If you have done this before with some other CGI script this will be
+   easy for you.
+
+Indexing your site
+
+   After the script has been installed, you will need to index your site
+   in order to be able to perform searches.
+
+   Most people want to index the files as they are on the server's disk,
+   and this is what will happen by default. If your pages are generated
+   dynamically (e.g. via PHP) you will want to index them via http. This
+   is also important for security reasons, as dynamic files might contain
+   passwords that should not be indexed in their source. To index dynamic
+   pages, load conf.pl into an editor and set $HTTP_START_URL.
+
+  Indexing using ssh/telnet
+
+    1. Login to your account using ssh/telnet if it is on a remote
+       machine.
+    2. Go to the directory where the script was installed. The setup
+       utility will have installed the script in a directory
+       perlfect/search/ inside your cgi-bin directory.
+    3. Run the indexer program with the command: perl indexer.pl and wait
+       until it's finished.
+
+  Indexing using a web browser
+
+   If you cannot log into your server via telnet/ssh you can start the
+   indexing process with your browser. This is less secure than logging
+   in via ssh to start the indexer, so it should only be used if
+   absolutely necessary. To do it, set a password at
+   $INDEXER_CGI_PASSWORD in conf.pl. Then load the index_form.html HTML
+   file into an editor and change the action attribute value of the
+   <form> tag so that it points to your server. Load index_form.html with
+   a browser, enter your password and submit the form. indexer.pl must be
+   executable by your server for this, and the data and temp directories
+   need to be writable, so you have to set the according permissions with
+   your FTP program.
+
+   Depending on how large your site is you will need to wait for some
+   time while the indexer digests all of your site's content. If you stop
+   the indexing (e.g. with Ctrl-C if you are in a shell) your index will
+   not be updated. Perlfect Search will continue to use the old index.
+
+Putting a search box on your pages
+
+   The setup utility will have the search script installed inside your
+   cgi-bin directory, in a subdirectory called perlfect/search/. So if
+   your cgi-bin is at the URL http://mydomain.com/cgi-bin/ the location
+   of the search script will be
+   http://mydomain.com/cgi-bin/perlfect/search/search.pl. Point your
+   browser to this url to see if it works. If the script has been
+   installed correctly and an index has been successfully created using
+   indexer.pl, this URL should return a results page for an empty query
+   (i.e. a page that tells you there are no results).
+
+   You can then use the following HTML code to insert the search box in
+   any of your pages (or use search_form.html, which contains this code):
+  <form method="get" action="/cgi-bin/perlfect/search/search.pl">
+    <input type="hidden" name="p" value="1">
+    <input type="hidden" name="lang" value="en">
+    <input type="hidden" name="include" value="">
+    <input type="hidden" name="exclude" value="">
+    <input type="hidden" name="penalty" value="0">
+    <select name="mode">
+          <option value="all">Match ALL words</option>
+          <option value="any">Match ANY word</option>
+    </select>
+    <input type="text" name="q"><input type="submit" value="Search">
+  </form>
+
+   You might have to change the form's action attribute to fit your local
+   setup. Here's a list of the possible fields (note that the defaults
+   are okay for most people, so you probably don't need to change
+   anything):
+
+   p
+          This is an internal variable (for the current page), you should
+          not change it.
+
+   lang
+          Use this attribute to set the language of the result page. The
+          text strings for new laguages and the paths to the templates
+          have to be added to conf.pl.
+
+   include
+          If you only want to search a part of all indexed files, you can
+          limit the search to certain paths with this option. Example:
+          /archive/ will exclude all files except those whose pathnames
+          match "/archive/". You can also set a regular expression.
+          Setting this to "" will search all files. Note: Do not use this
+          to protect private files (see below).
+
+   exclude
+          If you want to exclude the files in certain paths, use this
+          option. Example: /old_stuff/. This is evaluated after include,
+          so you can restrict the set of files with include and then
+          further restrict it with this option. You can also set a
+          regular expression. Setting this to "" will not exclude any
+          files. Note: Do not use this to protect private files, as
+          anybody can change this option. To protect private/secret
+          files, use conf/no_index.txt instead and re-index your files.
+
+   penalty
+          You can decrease the ranking of old documents with this option,
+          i.e. they will appear more at the end of all matches. This may
+          be useful for mailing list archives, where new articles are
+          often more interesting. The value is a float number that sets
+          the decrease in percent per age in days. Example: with 0.5 a
+          100 days old document's ranking will be decreased by 50%. (Note
+          that the calculation does not use the percentages you see in
+          the result pages.) Even if a document's ranking is decreased to
+          0%, it will still appear as a match. Your server should send a
+          Last-modified header if you want to use this option and you
+          index your pages via http. If it doesn't, the pages without
+          this header will be regarded as very new (their date is "now").
+          Often dynamically generated page lack the Last-modified header,
+          but it depends on the contents of the page if it makes sense to
+          regard the page as up-to-date.
+
+   mode
+          Set the default operator to all (logical AND) or any (logical
+          OR). This sets how terms are connected if more than one term is
+          entered by the user. It's just a default, users can still use
+          +/- in front of their terms. If you don't want your users to
+          see the selection, just make it a hidden field.
+
+   q
+          This is the name of the search field.
+
+Customizing the results page
+
+   Inside the directory where Perlfect Search was installed you will find
+   a directory called templates and inside it there are the files
+   search.html and no_match.html. You can open these files with your
+   favourite text editor and edit them to customize the look of the
+   results page. It is like a regular HTML file, but there are some
+   comments in it that tell the Perlfect Search where to insert the
+   dynamic results.
+
+   The result pages are valid XHTML. Please support web standards and
+   test the pages for correctness at [26]validator.w3.org if you make
+   changes to them. (Note that the template files themselves are not
+   valid XHTML, but the generated pages that show the result of a search
+   are. To test a template, search for something, save the result page
+   and upload that file to the validator.)
+
+Highlighting matched terms
+
+   Perlfect Search allows you to display the documents with all search
+   terms highlighted. Each search result has a "highlight matches" link
+   for that. This feature is limited to HTML pages that follow some
+   simple restrictions:
+     * Attribute values may not contain < or >, e.g. <img src="..."
+       alt="<b>Picture</b>"> is forbidden
+     * <script> and <style> sections need to be commented out. Example
+       how to comment out <script>:
+<script>
+<!--
+here comes the javascript
+// -->
+</script>
+
+   If your documents don't follow these restrictions the pages may be
+   displayed garbled. You should then disable this feature by setting
+   $HIGHLIGHT_MATCHES = 0; in conf.pl. You can use @HIGHLIGHT_EXT to set
+   which files have a "highlight matches" link. Usually these are just
+   HTML files, including HTML files generated by PHP etc (only if
+   $HTTP_START_URL is set), but not for PDF files etc.
+
+   The "highlight matches" feature takes an URL as a parameter - still it
+   will refuse to work on any URL that was not actually indexed. This is
+   a security measure so people cannot just load any file from your
+   server or view any URL on the web via your server.
+
+Excluding directories or files from the index
+
+  Local filesystem
+
+   Inside the directory where Perlfect Search was installed you'll find a
+   directory called conf and inside it there's a file called
+   no_index.txt. Open it with your favourite text editor and add the
+   paths of any files you want to exclude from indexing, one on each
+   line. The use of the wildcard character * is supported, so for example
+   a line containing:
+/dir1/dir2/file.*
+
+   will match any file in /dir1/dir2/ that starts with file.
+   If you want to exclude a whole directory, use
+/dir1/dir_to_exclude/*
+
+   You need to run indexer.pl again after making changes to this file.
+
+  Files fetched via http
+
+   If you are using the $HTTP_START_URL option to fetch your files via
+   http you can also exclude certain files from the index by adding this
+   meta tag to their head: <meta name="robots" content="noindex">. The
+   robots.txt file in the document root of your web server is also taken
+   into consideration.
+
+Searching
+
+   Searching is really simple: Type in one ore more words into the search
+   field and click "Search" (or press Return). If "Match ALL words" is
+   selected, only those documents are returned which contain all of your
+   search terms. With "Match ANY word" all documents are returned which
+   contain at least one of your search terms. Alternatively you can put a
+   plus sign (+) directly in front of one or more words to only get those
+   files which include all of those words. Words with a minus (-) sign
+   directly in front of them change the result so that only documents are
+   listed which don't contain any of those words.
+
+   Note that phrase searches are not supported, i.e. it doesn't make
+   sense to put quotes around your query "like this".
+
+   The results are ordered by relevance with the most relevant documents
+   listed first. Relevance depends on the number and position of matched
+   words in the documents.
+
+Find out more
+
+   Read our [27]FAQ. There's a lot of interesting stuff about configuring
+   and using Perlfect Search there, so don't leave it for tomorrow! You
+   also might want to look at conf.pl ([28]example), there are many
+   options that are not even mentioned in this documentation.
+
+   If you need help, [29]browse or [30]search the mailing list archives
+   before you subscribe and ask a question.
+
+   Finally, we offer professional support at [31]support@perlfect.com.
+
+   Last update: 2003-02-24
+
+Verweise
+
+  11. http://www.perlfect.com/freescripts/search/faq.shtml
+  12. http://www.perlfect.com/mailman/listinfo/perlfect-search
+  13. file://localhost/home/dnaber/perlfect/html/freescripts/search/GPL
+  14. http://www.perl.com/CPAN-local/modules/by-module/DB_File/
+  15. http://ppm.activestate.com/
+  16. http://www.activestate.com/
+  17. http://aspn.activestate.com/ASPN/Downloads/ActivePerl/PPM/
+  18. http://www.perl.com/CPAN/modules/by-module/MIME/
+  19. http://www.perl.com/CPAN/modules/by-module/Digest/
+  20. http://www.perl.com/CPAN/modules/by-module/URI/
+  21. http://www.perl.com/CPAN/modules/by-module/HTML/
+  22. http://www.perl.com/CPAN/modules/by-module/HTML/
+  23. http://www.perl.com/CPAN/modules/by-module/LWP/
+  24. http://perl.about.com/library/weekly/aa030500a.htm
+  25. http://www.cpan.org/modules/INSTALL.html
+  26. http://validator.w3.org/
+  27. http://www.perlfect.com/freescripts/search/faq.shtml
+  28. file://localhost/home/dnaber/perlfect/html/freescripts/search/conf.shtml
+  29. http://www.perlfect.com/pipermail/perlfect-search/
+  30. http://perlfect.com/mailman/listinfo/perlfect-search
+  31. mailto:support@perlfect.com

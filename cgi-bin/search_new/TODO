@@ -1,0 +1,31 @@
+Known problems / TODO:
+
+-visited links are not recognized by e.g. Mozilla because
+ both "+" and "%20" can be used to escape a space (Mozilla
+ uses "+", Perlfect Search uses "%20")
+-redirected urls can be indexed twice (a second check after get_url() is needed)
+-translated template files are not up-to-date
+-"highlight matches" doesn't work with umlauts
+
+WISHES:
+
+-normalize config values wrt ending slash
+-make the 65,000 files limit optional
+-remove quotemeta in load_excludes() so that full regexp can be used?
+-optionally use @EXT for http too (default to "yes"), so zip etc isn't downloaded at all
+-make the template valid XHTML by allowing ##cgi: varname## or so
+ (isn't completely possible anway, b/c of generated attributes)
+-"Searched yyy for xxx": the stopwords should not appear here
+ (??? google shows them, too)
+-better test for visited links (hash for urls, another hash for md5 checksums?)
+-test if @HTTP_CONTENT_TYPES option still works
+-"use strict"
+-fix "deep recursion" warning?!? perl warns if recursion > 100 :-(
+-setup: automatically find pdftotext
+-url rewriting function that can easily be modified by anybody
+-make "follow symlink" optional
+-make a case option (for http on windows servers)
+-command line search always uses OR -> make an option?
+-"in %.2f seconds" -> i18n
+-general DEBUG info, not HTTP_DEBUG. show result of to_be_ignored() in indexer_filesystem.pl
+-"getting the file '...' is not allowed": no highlighting (doesn't matter?)

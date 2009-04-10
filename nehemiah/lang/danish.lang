@@ -1,0 +1,1065 @@
+################################################################################
+# Danish language file for my little forum 2.0                                 #
+#------------------------------------------------------------------------------#
+# - don't modyfy or translate the section names like "[general]" or "[entry]"! #
+# - placeholders in square brackets (e.g. "[name]") will be replaced by values # 
+#   automatically - don't modify or translate them!                            #
+# - words in double square brackets (e.g. "[[here]]") will be transformed into #
+#   hyperlinks - you can modify or translate them (e.g. "[[aquÃ­]]")           #
+# - strings that span more than one line (E-Mail texts) are enclosed in triple # 
+#   quotes (e.g. """Hi,                                                        #
+#   how are you?""")                                                           #
+#------------------------------------------------------------------------------#
+# Translated by Michael T. H. Andersen (Goatie)                                #
+# Contact: molestedgoat[AT]gmail[DOT]com                                       #
+#                                                                              #
+# Official thread about the translation:                                       #
+# http://mylittleforum.net/forum/index.php?id=3204                             #
+# Remember to write in the official thread if you make any changes yourself or #
+# need someone to make the changes for you.                                    #
+################################################################################
+
+language =                  da
+charset =                   utf-8
+locale =                    da
+locale =                    da_DK@euro
+locale =                    dan
+dir =                       ltr
+time_format =               %d/%m %Y, %H:%M
+time_format_full =          %A %d. %B, %Y, %H:%M
+date_format =               %d.%m.%Y
+rss_time_format =           %a, %d %b %Y %H:%M:%S +0000
+unknown_user =              ukendt
+db_error =                  Database fejl!
+mail_error =                Mail server ikke tilg&aelig;ngelig - pr&oslash;v venligst igen senere!
+
+[general]
+subject =                   Emne
+author =                    Forfatter
+date =                      Dato
+replies =                   Svar
+views =                     Visninger
+category =                  Kategori
+submit_button_ok =          &nbsp;OK&nbsp;
+yes =                       ja
+no =                        nej
+go =                        Hop
+edit =                      rediger
+delete =                    slet
+next_page_link =            N&aelig;ste side &raquo;
+previous_page_link =        &laquo; Forrige side
+next_page_link_title =      n&aelig;ste side
+previous_page_link_title =  forrige side
+posted_by =                 af <strong>[name]</strong>[email_hp], [time]
+posted_by_location =        af <strong>[name]</strong>[email_hp], [location], [time]
+original_posting_linktitle = klik for at g&aring; til det originale indl&aelig;g af [name]
+error_headline =            Fejl!
+no_authorisation =          Ingen autoritet!
+page_doesnt_exist =         Denne side eksisterer ikke!
+error_form_uncomplete =     Alle felterne er ikke udfyldt
+caution =                   Advarsel!
+spam =                      Spam
+forum_index_link =          Forum forside
+forum_index_link_title =    Forum forside
+log_in_link =               Log ind
+log_in_link_title =         Log ind
+log_out_link =              Log ud
+log_out_link_title =        Log ud
+register_link =             Registrer
+register_link_title =       Registrer som ny bruger
+profile_link_title =        Rediger profil
+user_area_link =            Bruger
+user_area_link_title =      Bruger omr&aring;de
+admin_area_link =           Admin
+admin_area_link_title =     Admin omr&aring;de
+search_marking =            S&oslash;g:
+search_default_value =      S&oslash;g
+search_title =              S&oslash;g indl&aelig;g
+reload_linktitle =          Opdater / afmarker nye indl&aelig;g
+new_topic_link =            Nyt emne
+new_topic_link_title =      Skriv et nyt emne
+order_link =                Opstilling
+order_link_title_1 =        Opstil efter datoen p&aring; sidste svar
+order_link_title_2 =        Opstil efter datoen p&aring; tr&aring;de (normal)
+fold_threads =              Fold tr&aring;de sammen
+fold_threads_linktitle =    Fold tr&aring;de sammen
+expand_threads =            Udfold tr&aring;de
+expand_threads_linktitle =  Udfold tr&aring;de
+table_view =                Tabel visning
+table_view_linktitle =      Vis beskeder i tabeller
+thread_view =               Tr&aring;det visning
+thread_view_linktitle =     Vis beskeder i tr&aring;de
+thread_hierarchical =       Hierarkisk
+thread_hierarchical_linktitle = Vis tr&aring; i hierarkisk r&aelig;kkef&oslash;lge (normal)
+open_in_thread_link =       &Aring;ben i tr&aring;d
+open_in_thread_linktitle =  Vis dette indl&aelig;g i tr&aring;den
+thread_linear =             Line&aelig;r
+thread_linear_linktitle =   Vis tr&aring;d i Line&aelig;r opstilling
+hide_all_messages =         Sammenfold alle
+hide_all_messages_title =   Sammenfold alle beskeder
+show_all_messages =         Udfold alle
+show_all_messages_title =   Udfold alle beskeder
+expand_thread_linktitle =   Udfold tr&aring;d
+fold_thread_linktitle =     Fold tr&aring;d sammen
+category_title =            Kategori
+all_categories =            Alle kategorier
+page_title =                Side
+thread_entry_back_link =    Tilbage til forum forside
+thread_entry_back_title =   Forum forside
+reply_link =                Skriv svar
+reply_link_title =          Skriv et svar til denne besked
+back_to_index_link =        Tilbage til forum forside
+back_to_index_link_title =  Forum forside
+back_to_entry_link =        Tilbage til indl&aelig;gget af [name]
+back_to_entry_link_title =  Tilbage til indl&aelig;gget af [name]
+subnav_login =              Log ind
+subnav_pw_forgotten =       Glemt kodeord
+subnav_admin_area =         Admin omr&aring;de
+subnav_settings =           Forum indstillinger
+subnav_advanced_settings =  Advancerede indstillinger
+subnav_categories =         Kategorier
+subnav_edit_category =      Rediger kategori
+subnav_delete_category =    Slet kategori
+subnav_user =               Bruger administration
+subnav_smilies =            Smilies
+subnav_pages =              Sider
+subnav_delete_page =        Slet side
+subnav_edit_page =          Rediger side
+subnav_add_page =           Tilf&oslash;j side
+subnav_create_page =        Lav side
+subnav_edit_smiley =        Rediger smiley
+subnav_edit_user =          Rediger bruger
+subnav_delete_users =       Slet brugere
+subnav_register_user =      Registrer bruger
+subnav_spam_protection =    Spam beskyttelse
+subnav_email_list =         E-mail liste over registrerede brugere
+subnav_clear_userdata =     Ryd brugerdata
+subnav_search =             S&oslash;g
+subnav_register =           Registrer
+subnav_reset_uninstall =    Nulstil / afinstaller forum
+subnav_userarea =           Bruger omr&aring;de
+subnav_contact =            Kontakt
+subnav_userarea_show_user = [var]
+subnav_userarea_show_posts = Indl&aelig;g af [var]
+subnav_userarea_edit_user = Rediger Profil
+subnav_userarea_edit_pw =   &AElig;ndre Kodeord
+subnav_userarea_edit_mail = &AElig;ndre E-mail adresse
+subnav_backup =             Backup
+subnav_update =             Opdater
+subnav_update_run =         K&oslash;r opdatering
+subnav_delete_backup_file = Slet backup fil
+subnav_restore =            Gendan
+subnav_locked =             Konto l&aring;st
+subnav_delete_cookie =      Slet cookie
+subnav_disabled =           Forum deaktiveret
+subnav_page_error =         Fejl
+subnav_page =               [var]
+counter =                   [total_postings] Indl&aelig;g i [total_threads] Tr&aring;de, [registered_users] registrerede brugere
+counter_users_online =      [total_postings] Indl&aelig;g i [total_threads] Tr&aring;de, [registered_users] registrerede brugere, [total_users_online] brugere online ([registered_users_online] registrerede, [unregistered_users_online] g&aelig;ster)
+contact_link =              Kontakt
+contact_linktitle =         E-mail forum administratoren
+rss_feed_postings =         RSS Indl&aelig;g
+rss_feed_postings_title =   RSS Feed af alle nye indl&aelig;g
+rss_feed_new_threads =      RSS Tr&aring;de
+rss_feed_new_threads_title = RSS Feed af f&oslash;rste indl&aelig;g i tr&aring;de
+rss_feed_thread =           RSS Feed af tr&aring;d
+rss_feed_thread_title =     RSS Feed af denne tr&aring;d
+no_messages =               Ingen beskeder endnu.
+no_messages_in_category =   Der er endnu ikke skrevet nogen beskeder i denne kategori.
+error_invalid_category =    Ugyldig kategori
+error_word_too_long =       Ordet  "[word]" er for langt
+error_name_too_long =       Navnet er for langt
+error_email_too_long =      E-mail adressen er for lang
+error_hp_too_long =         Hjemmesiden er for lang
+error_location_too_long =   Lokationen er for lang
+error_profile_too_long =    Profilen er for lang ([profile_length] skrifttegn - kun [profile_maxlength] skrifttegn er tilladt)
+error_signature_too_long =  Signaturen er for lang ([signature_length] skrifttegn - kun [signature_maxlength] skrifttegn er tilladt)
+error_invalid_date_format = Ugyldig dato format af f&oslash;dselsdato (DD.MM.&Aring;&Aring;&Aring;&Aring;)
+error_invalid_date =        Ugyldig f&oslash;dselsdato
+error_email_wrong =         E-mail adressen er ugyldig
+error_hp_wrong =            Hjemmeside adressen er ugyldig
+error_pw_conf_wrong =       Kodeordet passer ikke sammen med det gentagne kodeord
+error_akismet_connection =  Serveren svarede ikke, pr&oslash;v venligst igen!
+error_akismet_connection_admin = Kunne ikke forbinde til Akismet serveren for at verificere API nøglen!
+error_akismet_api_key =     Ugyldig Wordpress API Nøgle
+error_spam_suspicion =      Spam mistanke! &AElig;ndre venligst dit indl&aelig;g (fjern f.eks. links)
+user_name_already_exists =  Dette brugernavn eksisterer allerede
+ajax_preview_title =        Vis indl&aelig;gget
+open_whole_thread =         &Aring;ben hele tr&aring;den
+change_category_link =      Vis indl&aelig;g i kategorien "[category]"
+mark_linktitle =            Marker indl&aelig;g
+unmark_linktitle =          Afmarker indl&aelig;g
+delete_marked_link =        Slet markerede indl&aelig;g
+manage_postings_link =      H&aring;ndter indl&aelig;g
+show_spam_link =            Vis spam ([number])
+hide_spam_link =            Gem spam
+delete_spam_link =          Slet spam
+no_replies =                Ingen svar
+one_reply =                 1 svar
+several_replies =           [replies] svar
+more_smilies_link =         flere...
+more_smilies_title =        flere smilies
+close =                     luk
+no_postings_user =          Ingen indl&aelig;g.
+search_submit_button =      S&oslash;g
+search_fulltext =           fuld tekst
+search_fulltext_or =        fuldtekst (eller)
+search_tags =               tags
+no_postings_found =         Ingen indl&aelig;g fundet.
+one_posting_found =         1 indl&aelig;g fundet:
+several_postings_found =    [number] indl&aelig;g fundet:
+no_postings_by_user =       Ingen indl&aelig;g.
+one_posting_by_user =       1 indl&aelig;g:
+several_postings_by_user =  [number] indl&aelig;g:
+rss_posting_by =            Indl&aelig;g af [name], [time]:
+rss_reply_by =              Svar af [name], [time]:
+move_drag_and_drop =        tr&aelig;k &amp; slip for at flytte op eller ned
+move_up =                   flyt op
+move_down =                 flyt ned
+delete_posting_title =      Slet indl&aelig;g
+delete_posting_confirm =    Vil du virkelig slette dette indl&aelig;g?
+delete_posting_confirm_admin = Vil du virkelig slette dette indl&aelig;g og alle dets svar?
+latest_postings_hl =        Seneste indl&aelig;g
+toggle_latest_postings =    Vis / gem seneste indl&aelig;g
+posting_minutes_ago =       [minutes] minutter siden
+posting_hours_ago =         [hours] timer, [minutes] minutter siden
+posting_days_ago =          [days] dage, [hours] timer, [minutes] min. siden
+tag_cloud_hl =              Nyeste tags
+sidebar =                   Sidebj&aelig;lke
+toggle_sidebar =            Vis / gem sidebj&aelig;lke
+options =                   Valgmuligheder
+administrator_title =       Administrator
+moderator_title =           Moderator
+avatar_img_alt =            Avatar
+search_user =               S&oslash;g bruger:
+no_users =                  Ingen brugere fundet.
+no_text_title =             Tom indl&aelig;g / ingen tekst
+no_text =                   [ No text ]
+no_text_alt =               [ No text ]
+error_invalid_form =        Session udl&oslash;bet! Kopier venligst teksten og log ind igen eller send teksten igen for at skrive den som g&aelig;st. 
+error_form_sent_too_fast =  Formularen blev sendt for hurtigt - vent venligst nogle sekunder og pr&oslash;v igen (automatiseret formular sendings beskyttelse)
+error_form_sent_too_slow =  Formularen er ikke gyldig l&aelig;ngere - kopier venligst teksten og opdater siden 
+terms_of_use_agreement =            Jeg er enig med [[bruger betingelserne]]
+terms_of_use_agree_error_register = Du skal v&aelig;re enig med betingelserne for brug for at kunne udf&oslash;re registreringen
+terms_of_use_agree_error_posting =  Du skal v&aelig;re enig med betingelserne for brug for at kunne sende denne besked
+
+[entry]
+edited_by =                 redigeret af [name], [time]
+tags_marking =              Tags:
+one_view =                  1 visning
+several_views =             [views] visninger
+complete_thread_marking =   Hele tr&aring;den:
+branch_marking =            Nuv&aelig;rende gren af tr&aring;den:
+direct_replies_marking =    Direkte svar til dette indl&aelig;g:
+edit_message_linkname =     rediger
+edit_message_linktitle =    rediger indl&aelig;g
+delete_message_linkname =   slet
+delete_message_linktitle =  slet indl&aelig;g
+move_posting_linkname =     flyt
+move_posting_linktitle =    flyt indl&aelig;g
+report_spam_linkname =      spam
+report_spam_linktitle =     rapporter som spam
+flag_ham_linkname =         ikke spam
+flag_ham_linktitle =        marker/rapporter som ikke spam
+lock_linkname =             l&aring;s
+lock_linktitle =            l&aring;s indl&aelig;g
+unlock_linkname =           &aring;ben
+unlock_linktitle =          &aring;ben indl&aelig;gget
+lock_thread_linkname =      l&aring;s tr&aring;d
+lock_thread_linktitle =     l&aring;s hele tr&aring;den
+unlock_thread_linkname =    &aring;ben tr&aring;d
+unlock_thread_linktitle =   &aring;ben hele tr&aring;den
+posting_locked =            l&aring;st
+email =                     E-mail
+homepage =                  Hjemmeside
+show_hide_posting_title =   Fold sammen / fold ud besked   
+spam_note =                 Dette indl&aelig;g passerede ikke spam filteret og vil ikke blive vist p&aring; forsiden f&oslash;r det er blevet aktiveret manuelt af en forum moderator eller administrator.
+
+[posting]
+no_authorization_edit =     Indl&aelig;gget kan ikke redigeres! Enten er redigerings perioden udl&oslash;bet, tr&aring;den er blevet l&aring;st eller der er allerede svar til tr&aring;den.
+posting_locked_no_reply =   Du kan ikke svare p&aring; dette indl&aelig;g fordi det er l&aring;st.
+no_auth_post_reg_users =    Kun registrerede brugere kan skrive beskeder!
+no_auth_session_expired =   Session udl&oslash;bet, kopier venligst din besked og log ind igen!
+no_auth_readonly =          The forum is currently set to read only mode!
+new_topic_hl =              Nyt emne
+reply_hl =                  Skriv svar
+edit_hl =                   Rediger indl&aelig;g
+name_marking =              Navn:
+email_marking =             E-mail:
+hp_marking =                Hjemmeside:
+location_marking =          Lokation:
+optional =                  (valgfri)
+optional_email =            (valgfri, vil ikke blive vist offentligt)
+remember_userdata_marking = Husk mig (cookie)
+delete_cookie_linkname =    slet cookie
+deleting_cookie =           sletter cookie...
+category_marking =          Kategori:
+subject_marking =           Emne:
+message_marking =           Besked:
+tags_marking =              Tags:
+tags_note =                 (valgfri, adskil med komma)
+bbcode_bold_marking =       fed
+bbcode_bold_title =         Fed tekst: [b]Tekst[/b]
+bbcode_italic_marking =     kursiv
+bbcode_italic_title =       Kursiv tekst: [i]Tekst[/i]
+bbcode_link_marking =       link
+bbcode_link_title =         Inds&aelig;t hyperlink: [link=http://www.dom&aelig;ne.tld/]link tekst[/link] eller [link]http://www.dom&aelig;ne.tld/[/link]
+bbcode_color =              farve
+bbcode_color_title =        Farvet tekst: [color=color]tekst[/color]
+bbcode_font_size =          st&oslash;rrelse
+bbcode_font_size_title =    Tekst st&oslash;rrelse: [size=small]lille tekst[/size] / [size=large]stor tekst[/size]
+bbcode_font_size_small =    lille
+bbcode_font_size_large =    stor
+bbcode_link_linktext =      Link tekst (valgfri):
+bbcode_link_url =           Link adresse (URL):
+bbcode_image_marking =      billede
+bbcode_image_title =        Inds&aelig;t billede: [img]http://dom&aelig;ne.tld/billede.jpg[/img]
+bbcode_image_url =          Billede adresse (URL):
+bbcode_list_marking =       liste
+bbcode_list_title =         Inds&aelig;t liste: [list][*]liste objekt[/list]
+upload_image_marking =      upload
+upload_image_title =        Upload billede
+smiley_title =              Inds&aelig;t smiley
+email_notific_reply_thread = E-mail notifikation n&aring;r der svares p&aring; denne tr&aring;
+email_notific_reply_post =   E-mail notifikation n&aring;r der svares p&aring; dette indl&aelig;g
+show_signature_marking =    Tilf&oslash;j signatur
+sticky_thread =             Opslag
+message_submit_button =     OK - Send
+message_submit_title =      Gem indl&aelig;g
+message_preview_button =    Vis Pr&oslash;ve
+message_preview_title =     Se dit indl&aelig;g f&oslash;r det bliver gemt
+quote_message =             citer besked
+clear_textarea =            ryd tekstfelt
+reply_to_posting_marking =  Svar til beskeden af <strong>[name]</strong>
+minutes_left_to_edit =      Du har [minutes] minutter tilbage til at redigere dette indl&aelig;g
+minutes_left_to_edit_reply = Du har [minutes] minutter tilbage til at redigere dette indl&aelig;g hvis der ingen svar er skrevet tidligere
+preview_headline =          Pr&oslash;ve:
+error_repeated_posting =    Gentagne indl&aelig;g inden for [minutes] minutter. Vent venligst et &oslash;jeblik og send igen. 
+error_not_accepted_word =   Ikke accepteret ord: [not_accepted_word]
+error_no_name =             Intet navn er indtastet
+error_name_like_subject =   Navnet er det samme som emnet
+error_name_reserved =       Dette navn er allerede reserveret af en registreret bruger
+error_username_too_long =   Brugernavnet er for langt
+error_name_too_long =       Navnet er for langt
+error_no_email_to_notify =  Ingen e-mail adresse til notifikation
+error_no_subject =          Intet emne er indtastet
+error_no_text =             Ingen beskedtekst er indtastet
+error_subject_too_long =    Emnet er for langt
+error_text_too_long =       Beskeden er for lang ([text_length] skrifttegn - kun [text_maxlength] skrifttegn er tilladt)
+error_tags_too_long =       Tags er for langt
+error_posting_unavailable = Indl&aelig;gget eksisterer ikke
+
+[delete_posting]
+delete_postings_hl =        Slet indl&aelig;g
+delete_marked_hl =          Slet markerede indl&aelig;g
+delete_marked_confirm =     Vil du virkelig slette alle markerede indl&aelig;g og deres svar?
+delete_spam_hl =            Slet spam
+delete_spam_confirm =       Vil du virkelig slette alle indl&aelig;g klassificeret som spam?
+delete_posting_submit =     OK - Slet
+report_spam_hl =            Rapporter spam
+posting_already_spam =      Dette indl&aelig;g er allerede markeret som spam.
+spamcheck_posting_not_checked = Dette indl&aelig;g er allerede markeret som ham eller var ikke tjekket af Akismet fordi enten Akismet ikke var aktiveret eller fordi det er et indl&aelig;g af en registreret bruger.
+spamcheck_posting_passed =  Dette indl&aelig;g har passeret Akismet spam filteret. Rapporter det kun som spam hvis det med sikkerhed er spam!
+spamcheck_akismet_api_error = Dette indl&aelig;g passerede Akismet spam filteret fordi en fejl skete imens det blev tjekket. Dette kan v&aelig;re foresaget af en ugyldig API nøgle!  
+spamcheck_akismet_timeout_error = Dette indl&aelig;g passerede spam filteret fordi Akismet serveren ikke svarede.
+report_spam_delete_submit = Rapporter som spam og slet
+report_spam_submit =        Rapporter kun som spam
+delete_only_submit =        Slet kun
+postings_doesnt_exist =     Dette indl&aelig;g eksisterer ikke!
+posting_not_flagged_as_spam = Dette indl&aelig;g er ikke markeret som spam.
+flag_ham_hl =               Marker som ham
+flag_ham_note =             Dette indl&aelig:g var klassificeret som spam af Akismet spam filteret. Rapporter det kun som ham (ikke spam) hvis det med sikkerhed ikke er spam!
+report_flag_ham_submit =    Rapporter og marker som ham
+flag_ham_submit =           Marker kun som ham
+no_authorisation_delete =   Indl&aelig;gget kan ikke slettes! Enten er det fordi perioden mellem indl&aelig;g kan slettes er udl&oslash;bet, tr&aring;den er l&aring;st eller der allerede er blevet svaret p&aring; dette indl&aelig;g.
+
+[captcha]
+captcha_marking =           Spam beskyttelses tjek:
+captcha_expl_math =         Regn venligst de to tal ud:
+captcha_expl_image =        Indtast venligst bogstaverne/tallene fra billedet ovenover:
+captcha_image_alt =         Hvis du ikke kan se dette billede skal du oprette en brugerkonto og logge ind for at sende denne formular
+captcha_image_alt_reg =     Kontakt venligst forum administratoren hvis du ikke kan se dette billede 
+captcha_check_failed =      Spam beskyttelses tjekket fejlede - pr&oslash;v venligst igen!
+
+[upload_image]
+image_upload_not_enabled =  Billede upload er ikke aktiveret.
+upload_image_hl =           Upload billede
+upload_image_button =       Upload
+upload_error =              Der skete en fejl ved uploadning af billedet
+upload_error_2 =            Intet billede specificeret eller billede st&oslash;rrelsen er st&oslash;rrer end den accepterede maximum st&oslash;rrelse sat p&aring; serveren ([server_max_filesize]).
+invalid_file_format =       ugyldig fil format
+file_too_large =            fil for stor ([width]*[height], [filesize] KB, maximum er [max_width]*[max_height], [max_filesize] KB)
+upload_successful =         Billede uploadet uden fejl
+image_downsized =           <strong>Notits:</strong> Billedet blev gjort mindre, den nye st&oslash;rrelse er [width] x [height] px, [filesize] KB.
+insert_image =              Indsæt billede
+insert_image_exp =          Klik venligst p&aring; billedet for at inds&aelig;tte det i din besked.
+insert_image_exp_no_js =    Du kan bruge f&oslash;lgende kode for at inds&aelig;tte billedet i din besked:
+browse_uploaded_images =    Gennemse uploadede billeder...
+upload_image =              &laquo; upload billede
+no_images =                 Ingen billeder tilg&aelig;ngelig.
+
+[avatar]
+avatar_hl =                 Avatar
+delete_avatar =             Slet avatar
+upload_avatar_hl =          Upload avatar
+upload_avatar_notes =       Maximum avatar st&oslash;rrelse: [width]*[height] px, [filesize] KB
+upload_image_button =       Upload
+upload_error =              Der skete en fejl ved uploadning af billedet
+upload_error_2 =            Intet billede specificeret eller billede st&oslash;rrelsen er st&oslash;rrer end den accepterede maximum st&oslash;rrelse sat p&aring; serveren ([server_max_filesize]).
+invalid_file_format =       ugyldig fil format
+file_too_large =            fil for stor ([width]*[height], [filesize] KB, maximum er [max_width]*[max_height], [max_filesize] KB)
+upload_successful =         Avatar uploadet uden fejl
+close_window =              Luk vindue
+image_downsized =           <strong>Notits:</strong> Avataren blev gjort mindre, den nye st&oslash;rrelse er [width] x [height] px, [filesize] KB.
+avatars_disabled =          Avatarer er ikke aktiveret
+
+[move_posting]
+move_posting_hl =           Flyt indl&aelig;g
+move_posting_new_thread =   Lav en selv-indeholdende tr&aring;d fra dette indl&aelig;g og dets svar
+move_posting =              Flyt dette indl&aelig;g og dets svar til indl&aelig;g # [number]
+move_posting_submit =       OK - Flyt indl&aelig;g
+invalid_posting_to_move =   Ugyldig indl&aelig;gs nummer
+
+[manage_postings]
+manage_postings_hl =        H&aring;ndter indl&aelig;g
+lock_all_threads =          L&aring;s alle tr&aring;de:
+unlock_all_threads =        &Aring;ben alle tr&aring;de:
+lock_old_threads =          L&aring;s tr&aring;de hvor seneste svar er &aelig;ldre end [days] dage:
+
+[login]
+login_ip_temp_blocked =     Pga. gentagne fejlfors&oslash;g p&aring; at logge ind er du midlertidig blokeret fra at logge ind. Du kan pr&oslash;ve igen om nogle f&aring; minutter. 
+login_username =            Brugernavn:
+login_password =            Kodeord:
+login_auto =                Log mig automatisk ind p&aring; denne computer
+login_submit =              Log ind
+login_advice =              For at logge ind skal cookies v&aelig;re aktiveret!
+pw_forgotten_link =         Jeg har glemt mit kodeord
+pwf_failed =                Ingen bruger med denne e-mail adresse fundet
+login_failed =              Brugernavn ukendt eller forkert kodeord!
+registered_users_only =     Kun registrerede brugere kan skrive beskeder!
+account_not_activated =     Din konto er endnu ikke aktiveret!
+account_activated =         Din konto er nu aktiveret.
+account_activated_but_locked = Din konto er aktiveret men mangler stadig at blive l&aring;st op af en administrator eller moderator f&oslash;r du kan logge ind!
+mail_sent =                 E-mailen er sendt.
+pw_sent =                   Det nye kodeord er sendt.
+code_invalid =              Kode ugyldig.
+
+[pw_forgotten]
+new_pw_ok =                 Et nyt kodeord er genereret og sendt.
+new_pw_failed =             Godkendelses linket er ugyldigt. Et nyt kodeord kunne ikke genereres.
+pw_forgotten_exp =          Kodeordene er krypterede med en en-vejs algoritme s&aring; du kan ikke hente dit kodeord. Du kan kun f&aring; et nyt kodeord. For at undg&aring; nogen form for misbrug vil du modtage en e-mail og blive bedt om at f&oslash;lge et link for at godkende din foresp&oslash;rgsel. Ved modtagelsen af din godkendelse vil et nyt kodeord blive genereret og sendt til dig.
+pwf_username =              Brugernavn:
+pwf_email =                 E-mail:
+
+[user]
+user_name =                 Brugernavn
+user_type =                 Type
+admin =                     Admin
+mod =                       Moderator
+user =                      Bruger
+user_email =                E-mail
+user_hp =                   Hjemmeside
+mailto_user =               E-mail til [user]
+email =                     E-mail
+homepage =                  Hjemmeside
+user_postings =             Indl&aelig;g
+user_online =               Online
+user_blockage =             L&aring;s
+online =                    online
+locked =                    l&aring;st
+lock_title =                l&aring;s bruger
+unlocked =                  slukket
+unlock_title                &aring;ben bruger
+
+[user_show]
+user_name =                 Brugernavn:
+user_avatar =               Avatar:
+user_type =                 Type:
+admin =                     Admin
+mod =                       Moderator
+user =                      Bruger
+user_real_name =            Navn:
+gender =                    K&oslash;n:
+male =                      han
+female =                    hun
+age_birthday =              Alder / f&oslash;dselsdag:
+mailto_user =               E-mail til [user]
+email =                     E-mail
+homepage =                  Hjemmeside
+user_hp_email =             Hjemmeside / E-mail:
+user_location =             Lokation:
+user_registered =           Registreret:
+user_last_login =           Sidste login:
+user_logins =               Antal logins:
+user_postings =             Indl&aelig;g:
+show_postings_link =        vis indl&aelig;g
+last_posting =              Sidste indl&aelig;g:
+logins_per_day =            Antal logins per dag:
+postings_per_day =          Indl&aelig;g per dag:
+user_profile =              Profil:
+user_account_doesnt_exist = Denne bruger konto eksisterer ikke.
+
+[user_edit]
+edit_user_name =            Brugernavn:
+edit_avatar =               Avatar:
+add_avatar_link =           tilf&oslash;j avatar
+edit_avatar_link_title =    rediger avatar
+edit_user_type =            Type:
+edit_user_email =           E-mail:
+edit_email =                &aelig;ndre E-mail adresse
+edit_user_pw =              Kodeord:
+pw_not_displayed =          vises ikke
+edit_pw =                   &aelig;ndre kodeord
+edit_user_email_contact =   E-mail adresse kan kontaktes
+edit_user_real_name =       Navn:
+edit_user_gender =          K&oslash;n:
+male =                      han
+female =                    hun
+edit_user_birthday =        F&oslash;dselsdag:
+birthday_format =           DD.MM.&Aring;&Aring;&Aring;&Aring;
+edit_user_hp =              Hjemmeside:
+edit_user_location =        Lokation:
+edit_user_profile =         Profil:
+edit_user_signature =       Signatur:
+edit_user_time_diff =       Tids forskel:
+time_diff_format =          forskel i timer, f.eks. +3 eller -5:30 
+current_forum_time =        Nuv&aelig;rende forum tid: [time]
+edit_user_notification =    E-mail notifikation:
+admin_mod_notif_posting =   n&aring;r en ny besked er skrevet
+admin_mod_notif_register =  n&aring;r en ny bruger er registreret
+userdata_submit_button =    OK - Gem
+profile_saved =             Din profil er nu gemt.
+pw_changed =                Kodeordet er &aelig;ndret.
+
+[edit_pw]
+edit_pw_old =               Gammelt kodeord:
+edit_pw_new =               Nyt kodeord:
+edit_pw_conf =              Gentag nyt kodeord:
+error_old_pw_wrong =        Det gamle kodeord er forkert
+error_pw_conf_wrong =       Det nye kodeord er ikke det samme som det gentagne
+error_new_pw_too_short =    Det nye kodeord skal indeholde mindst [characters] skrifttegn
+
+[edit_email]
+edit_email_exp =            N&aring;r e-mail adressen bliver &aelig;ndret vil du blive logget ud og kontoen skal aktiveres igen. En aktiverings n&oslash;gle vil blive sendt til den nye e-mail adresse. V&aelig;r sikker p&aring; at e-mail adressen er korrekt! Kontoen skal aktiveres indenfor det n&aelig;ste d&oslash;gn.
+edit_email_new =            Ny e-mail:
+edit_email_new_confirm =    Gentag ny e-mail:
+edit_email_pw =             Kodeord:
+error_form_uncompl =        Ikke alle felter er udfyldt
+error_email_confirmation =  Ny e-mail og gentagelsen er ikke det samme
+error_email_too_long =      E-mail adressen er for lang
+error_identic_email =       Den nye e-mail er den samme som den gamle
+error_email_invalid =       E-mail adressen er ugyldig
+pw_wrong =                  Kodeordet er forkert
+error_meilserver =          Kunne ikke kontakte mailserveren - pr&oslash;v venligst igen senere
+
+[register]
+register_exp =              Angiv venligst det &oslash;nskede brugernavn, et kodeord og en gyldig e-mail adresse. En aktiverings n&oslash;gle vil blive sendt til denne e-mail adresse. Kontoen skal aktiveres indenfor det n&aelig;ste d&oslash;gn.
+register_username =         Brugernavn:
+register_user_email =       E-mail:
+register_pw =               Kodeord:
+register_pw_conf =          Gentag Kodeord:
+register_only_by_admin =    Brugere kan kun blive registreret af forum administratoren.
+registered =                Kontoen er registreret og aktiverings n&oslash;glen er sendt til <strong>[var]</strong>. Kontoen skal aktiveres indenfor det n&aelig;ste d&oslash;gn.
+registered_send_error =     Kontoen er registreret men aktiverings n&oslash;glen kunne ikke sendes (mailserver ikke tilg&aelig;ngelig). Kontakt venligst forum administratoren og sp&oslash;rg efter en manuel konto aktivering.
+activation_failed =         Aktiveringen af kontoen fejlede.
+error_password_too_short =  Kodeordet skal indeholde mindst [characters] skrifttegn
+error_email_alr_exists =    Der findes allerede en bruger med denne e-mail adresse
+error_reg_not_accepted_word = Spam beskyttelse: E-mail eller navn indeholder et ikke accepteret ord eller domæne
+
+[contact]
+contact_hl =                E-mail til forum administratoren
+contact_user_hl =           E-mail til [recipient_name]
+impossible_to_contact =     Denne bruger kan ikke kontaktes!
+contact_doesnt_exist =      Denne kontakt eksisterer ikke!
+sender_address_caption =    Afsender e-mail:
+subject_caption =           Emne:
+message_caption =           Besked:
+message_submit_caption =    OK - Send besked
+email_sent =                Beskeden er sendt uden fejl.
+error_no_text =             Ingen besked indtastet
+error_no_email =            Ingen afsender e-mail adresse indtastet
+error_no_subject =          Intet emne indtastet
+error_email_invalid =       E-mail adressen er ugyldig
+error_not_accepted_word =   Beskeden indeholder mindst et ikke accepteret ord
+error_email_subject_too_long = Emnet er for langt
+error_email_text_too_long = Beskeden er for lang ([text_length] skrifttegn - kun [text_maxlength] skrifttegn er tilladt)
+error_spam_suspicion =      Spam mistanke! &AElig;ndre venligst din besked (fjern f.eks. links)
+error_mailserver =          Beskeden kunne ikke afsendes!
+
+[info]
+user_locked =               Din konto er p&aring; nuv&aelig;rende tidspunkt l&aring;st.
+forum_disabled =            Forumet er p&aring; nuv&aelig;rende tidspunkt ikke tilg&aelig;ngeligt.
+
+[delete_cookie]
+delete_cookie =             Cookie'en er slettet.
+
+[admin]
+enabled =                   aktiveret
+disabled =                  deaktiveret
+folder_alt =                mappe
+file_alt =                  fil
+admin_confirm_password =    Admin kodeord:
+error_password_wrong =      Kodeord forkert
+
+# admin menu
+forum_settings_link =       Forum indstillinger
+category_administr_link =   Kategori administrering
+user_administr_link =       Bruger administrering
+smilies_administr_link =    Smilies
+pages_administr_link =      Sider
+spam_protection_link =      Spam beskyttelse
+backup_restore_link =       Backup
+update_link =               Opdater
+reset_uninstall_link =      Nulstil eller afinstaller forum
+
+# forum settings:
+clear_chache =              Ryd cache for at tilf&oslash;je &aelig;ndringerne til allerede eksisterende indl&aelig;g
+settings_submit_button =    OK - Gem indstillinger
+advanced_settings_link =    Advancerede indstillinger
+forum_name =                Forum navn
+forum_name_desc =           Bliver vist i bl.a. headeren
+forum_description =         Forum beskrivelse
+forum_description_desc =    En kort beskrivelse af forumet
+forum_address =             Forum adresse
+forum_address_desc =        URL til forumet (brug dette format: http://www.dom&aelig;ne.tld/forum/)
+forum_email =               Forum e-mail adresse
+forum_email_desc =          Vil blive brugt som kontakt adresse og afsender adresse for alle e-mails som bliver sendt af forumet
+home_link =                 Hjemmeside link
+home_link_desc =            Link til din hjemmeside, f.eks. http://www.dom&aelig;ne.tld/ eller ../index.html (valgfri)
+home_link_name =            Hjemmeside link navn
+home_link_name_desc =       Navnet p&aring; hjemmeside linket, f.eks. &quot;Tilbage til hjemmeside&quot;
+template =                  Tema
+template_desc =             Tema for side layoutet
+language_file =             Sprog
+language_file_desc =        Forumets sprog
+threads_per_page =          Tr&aring;de per side
+threads_per_page_desc =     Hvor mange tr&aring;de skal vises per side?
+time_difference =           Tids forskel:
+time_difference_desc =      Tids forskel mellem serveren og forumet i minutter
+accession =                 Adgangs tilladelse
+accession_desc =            Hvem har adgang til forumet?
+post_permission =           Skrive tilladelse
+post_permission_desc =      Hvem m&aring; skrive beskeder?
+only_registered_users =     kun registrerede brugere
+all_users =                 alle
+register_permission =       Bruger registrering
+register_permission_desc =  Kan brugere registrere sig selv?
+register_self =             selv
+register_self_locked =      selv men nye kontoer skal &aring;bnes af en admin eller en moderator
+register_only_admin =       kun admin
+user_area =                 Bruger omr&aring;de
+user_area_desc =            Er bruger omr&aring;det (bruger liste, profiler) tilg&aelig;ngelig for offentligheden?
+public_accessible =         offentlig tilg&aelig;ngelig
+accessible_reg_users_only = kun tilg&aelig;ngelig for registrerede brugere
+latest_postings =           Seneste indl&aelig;g
+latest_postings_desc =      Hvor mange seneste indl&aelig;g skal vises i en liste p&aring; forsiden (0=deaktiveret)? 
+tag_cloud =                 Tag sky
+tag_cloud_desc =            Skal en tag sky af de seneste tags vises p&aring; forsiden? 
+enable_tag_cloud =          Tag sky aktiveret
+terms_of_use_agreement =    Bruger betingelser
+terms_of_use_agreement_desc = Obligatorisk for ikke registrerede brugere at v&aelig;re enige med bruger betingelserne n&aring;r de skriver beskeder og registrerer
+terms_of_use_agreement_enabled = Bruger betingelser aktiveret
+terms_of_use_url =          Bruger betingelser URL:
+edit_postings =             Redigering af indl&aelig;g
+edit_postings_desc =        Redigering af indl&aelig;g opf&oslash;rsel
+edit_own_postings =         Redigering af egne indl&aelig;g:
+edit_own_postings_all =     alle brugere kan redigere deres egne indl&aelig;g
+edit_own_postings_users =   kun registrerede brugere kan redigere deres egne indl&aelig;g
+edit_own_postings_disabled = deaktiveret (kun admins og mods kan redigere indl&aelig;g)
+user_edit_if_no_replies =   hvis et indl&aelig;g f&aring;r svar kan det kun redigeres inden for [minutes] minutter (0 = kan ikke redigeres hvis der er svar)  
+edit_max_time_period =      Maximum periode af tid egne indl&aelig;g kan redigeres: [minutes] minutter (0 = uendelig)
+show_if_edited =            vis om et indl&aelig;g er redigeret hvis det er redigeret [minutes] minutter efter det blev skrevet
+dont_show_edit_by_admin =   vis ikke om et indl&aelig;g blev redigeret af en admin
+dont_show_edit_by_mod =     vis ikke om et indl&aelig;g blev redigeret af en moderator 
+bbcode =                    BB Kode
+bbcode_desc =               Aktiver BB Koder til formatering af beskeder?
+bbcodes_enabled =           BB Koder aktiveret
+bbcodes_img_enabled =       tillad ogs&aring; BB Kode til inds&aelig;ttelse af billeder
+smilies =                   Smilies
+smilies_desc =              Skal smilies som ":-)" erstattes af billeder? (Smilies kan defineres i smilies administratons panelet)
+smilies_enabled =           Smilies aktiveret
+enamble_avatars =           Avatarer
+enamble_avatars_desc =      Skal det v&aelig;re muligt for registrerede brugere at uploade avatar billeder? Hvis aktiveret skal mappen images/avatars/ v&aelig;re mulig at skrive til (CHMOD 777).
+avatars_profiles_postings = vis avatarer i profiler og indl&aelig;g
+avatars_profiles =          vis kun avatarer i profiler
+max_avatar_size =           Maximum avatar st&oslash;rrelse:<br /> [width] x [height], [filesize] KB 
+upload_images =             Upload billeder
+upload_images_desc =        Skal det v&aelig;re muligt at uploade billeder? Hvis aktiveret skal mappen images/uploaded/ v&aelig;re mulig at skrive til (CHMOD 777).
+upload_enabled_admins_mods = kun mods og admins 
+upload_enabled_users =      aktiveret for registrerede brugere
+upload_enabled_all =        aktiveret for alle
+max_upload_size =           Maximum billede st&oslash;rrelse:<br /> [width] x [height], [filesize] KB
+autolink =                  Auto link
+autolink_desc =             Skal URLer automatisk genkendes og laves klikbare?
+autolink_enabled =          Auto link aktiveret
+count_views =               Visnings t&aelig;ller
+count_views_desc =          Skal visninger af beskeder t&aelig;lles?
+views_counter_enabled =     Visnings t&aelig;ller aktiveret
+count_users_online =        Brugere online t&aelig;ller
+count_users_online_desc =   T&aelig;l brugere der er online indenfor hvor mange minutter (0=deaktiveret)?
+rss_feed =                  RSS Feeds
+rss_feed_desc =             Aktiver RSS Feeds (kun hvis adgangs tilladelse er sat til "Alle")?
+rss_feed_enabled =          RSS Feed aktiveret
+forum_enabled_marking =     Forum aktiveret
+forum_enabled_desc =        Afmarker denne hvis forumet skal v&aelig;re utilg&aelig;ngeligt. Det deaktiverede forum er stadig tilg&aelig;ngeligt hvis man er logget ind som admin. 
+forum_enabled =             forum aktiveret
+forum_disabled_message =    Besked som vises hvis deaktiveret: 
+category_name =             Kategori
+category_accession =        Tilg&aelig;ngelig for
+cat_accessible_admin_mod =  admins og mods
+cat_accessible_reg_users =  registrerede brugere
+cat_accessible_all =        alle
+category_topics =           Thr&aring;de
+category_entries =          Indl&aelig;g
+no_categories =             Ingen kategorier specificeret.
+new_category =              Ny kategori:
+edit_category =             Kategori:
+category_accessible_by =    Tilg&aelig;ngelig for:
+entries_in_not_ex_cat =     <strong>Notits:</strong> Der er indl&aelig;g som ikke kan vises fordi de er i en ikke eksisterende kategori. Hvad &oslash;nsker du at g&oslash;re med disse indl&aelig;g?
+entries_in_not_ex_cat_del = slet dem
+entries_in_not_ex_cat_mov = flyt dem ind i denne kategori:
+category_already_exists =   Denne kategori eksisterer allerede
+delete_category_hl =        Slet kategori "[category]"
+delete_category_compl =     Slet kategorien og alle dens indl&aelig;g
+del_cat_keep_entries =      Slet kategorien men behold dens indl&aelig;g
+del_cat_move_entries =      Slet kategorien men behold dens indl&aelig;g og flyt dem ind i denne kategori:
+delete_category_submit =    OK - Slet kategori
+
+# Smilies:
+edit_smilies_smiley =       Smiley:
+edit_smilies_codes =        Koder:
+edit_smilies_title =        Titel:
+smiley_file_doesnt_exist =  Smiley fil eksisterer ikke
+smiley_code_empty =         Ingen smiley kode specificeret
+no_other_smilies_in_folder = Der er ingen andre smilies i smiley mappen. Upload smiley filer i mappen 'images/smilies' for at tilf&oslash;je smilies.
+smiley_image =              Smiley
+smiley_codes =              Kode(r)
+smiley_title =              Titel
+disable_smilies =           Deaktiver smilies
+enable_smilies =            Aktiver smilies
+add_smiley =                Tilf&oslash;j smiley:
+add_smiley_code =           Kode:
+smilies_disabled =          Smilies er deaktiveret.
+
+# pages:
+page_title =                Titel
+page_content =              Indhold
+page_content_desc =         Du kan bruge HTML til formateringen af siden 
+page_menu_linkname =        Menu link navn
+page_menu_linkname_desc =   kun hvis siden skal vises i menuen
+page_access =               Adgang
+page_access_reg_users =     kun registrerede brugere
+page_access_public =        offentlig
+no_pages =                  Ingen sider tilg&aelig;ngelig
+add_page_link =             Tilf&oslash;j side
+edit_page_submit =          OK - Gem side
+page_doesnt_exist =         Denne side eksisterer ikke.
+delete_page_confirm =       Vil du virkelig slette denne side?
+delete_page_submit =        OK - Slet side
+error_no_page_title =       Ingen titel
+
+# user administration:
+user_name_empty =           Intet brugernavn indtastet
+num_registerd_users =       [number] registrerede brugere
+user_id =                   ID
+user_name =                 Brugernavn
+user_email =                E-mail
+user_type =                 Type
+user_registered =           Registreret
+user_logins =               Logins
+last_login =                Sidste login
+lock =                      L&aring;s
+admin =                     Admin
+mod =                       Moderator
+user =                      Bruger
+locked =                    l&aring;st
+unlocked =                  slukket
+lock_title =                l&aring;s bruger
+unlock_title                &aring;ben bruger
+user_inactive =             Bruger er inaktiv
+activate_note =             Bruger kontoen er endnu ikke aktiveret eller brugeren skifter e-mail adresse. Aktiver kun hvis brugeren har haft problemer med at aktivere den selv.
+activate_link =             Aktiver konto
+delete_selected_users =     Slet valgte
+add_user =                  Tilf&oslash;j bruger
+email_list =                E-mail liste af registrerede brugere
+clear_userdata =            Ryd brugerdata
+edit_user_name =            Brugernavn:
+edit_user_avatar =          Avatar:
+delete_avatar =             Slet avatar
+edit_user_type =            Type:
+edit_user_email =           E-mail:
+edit_user_email_contact =   E-mail adresse kan kontaktes
+edit_user_real_name =       Navn:
+edit_user_hp =              Hjemmeside:
+edit_user_location =        Lokation:
+edit_user_profile =         Profil:
+edit_user_signature =       Signatur:
+edit_user_time_diff =       Tids forskel:
+edit_user_time_diff_format = forskel i timer, f.eks. +3 eller -5:30 
+edit_user_gender =          K&oslash;n:
+male =                      han
+female =                    hun
+edit_user_birthday =        F&oslash;dselsdag:
+birthday_format =           DD.MM.&Aring;&Aring;&Aring;&Aring;
+edit_user_notification =    E-mail notifikation:
+admin_mod_notif_posting =   n&aring;r en ny besked er skrevet
+admin_mod_notif_register =  n&aring;r en ny bruger er registreret
+userdata_submit_button =    OK - Gem brugerdata
+delete_user_confirmation =  Er du sikker p&aring; du vil slette denne bruger?
+delete_users_confirmation = Er du sikker p&aring; du vil slette de f&oslash;lgende brugere?
+delete_users_submit =       OK - Slet
+register_exp =              Du kan efterlade feltet tomt hvis et tilf&aelig;ldigt kodeord skal genereres. I dette tilf&aelig;lde skal brugerdata sendes til den specificerede e-mail adresse.
+register_username =         Brugernavn:
+register_email =            E-mail:
+register_pw =               Kodeord:
+register_pw_conf =          Gentag kodeord:
+register_send_userdata =    Send brugerdata til den specificerede e-mail adresse
+error_send_userdata =       Hvis du efterlader kodeordet tomt skal brugerdata sendes til den specificerede e-mail adresse
+error_email_wrong =         E-mail adressen er ikke korrekt
+new_user_registered =       Brugeren "[name]" er registreret.
+new_user_reg_send_error =   Brugeren "[name]" er registreret men brugerdata kunne ikke sendes.
+clear_userdata_condition =  Slet brugere der loggede ind maximum [logins] gange og senest mere end [days] dage siden. 
+clear_userdata_note =       Admins og Moderatorer vil ikke blive ber&oslash;rt. F&oslash;r sletningen f&aring;r du en liste over de valgte brugere.
+no_users_in_selection =     Ingen brugere valgt
+
+# spam protection:
+captcha =                   CAPTCHA
+captcha_desc =              Hvilke formularer skal beskyttes af hvilken type CAPTCHA (kun for ikke registrerede brugere)?
+captcha_graphical_desc =    Den grafiske CAPTCHA kr&aelig;ver GD Lib og det anbefales at bruge mindst en TTF skrifttype. L&aelig;g skrifttype filerne (*.ttf) ind i mappen modules/captcha/fonts/. Du kan hente skrifttyper p&aring; f.eks. www.dafont.com.
+captcha_posting =           Indl&aelig;g formular:
+captcha_email =             E-mail formular:
+captcha_register =          Registrerings formular:
+captcha_disabled =          deaktiveret
+captcha_mathematical =      matematisk
+captcha_graphical =         grafisk
+gr_captcha_not_available =  Grafisk CAPTCHA ikke tilg&aelig;ngelig (GD Lib ikke tilg&aelig;ngelig)
+gr_captcha_no_font =        Ingen skrifttyper tilg&aelig;ngelige, CAPTCHA kode kan ikke vises optimalt
+bad_behavior =              Bad Behavior
+bad_behavior_desc =         <a href="http://www.bad-behavior.ioerror.us/">Bad Behavior</a> spam beskyttelse.
+bad_behavior_enable =       aktiver Bad Behavior
+akismet =                   Akismet
+akismet_desc =              <a href="http://akismet.com/">Akismet</a> spam beskyttelses service. For at bruge den skal du bruge en <a href="http://wordpress.com/api-keys/">Wordpress API N&oslash;gle</a> (vil ikke virke uden eller med en ugyldig API N&oslash;gle!).   
+akismet_key =               Wordpress API N&oslash;gle:
+akismet_save_spam =         Gem spam (markeret som spam og ikke vist)?
+akismet_auto_delete_spam =  Slet spam automatisk efter hvor mange timer (0=slet ikke)?
+akismet_entry =             tjek indl&aelig;g formular
+akismet_mail =              tjek e-mail formular
+banned_ips =                Banned IPer
+banned_ips_desc =           IP adresser som ikke skal have adgang. For at definere flere IP adresser skal de deles med kommaer.
+banned_user_agents =        Banned bruger agenter
+banned_user_agents_desc =   Strenge i bruger agenter som ikke skal have adgang. For at definere flere strenge skal de deles med kommaer.
+not_accepted_words =        Ikke accepterede ord
+not_accepted_words_desc =   Ord eller dom&aelig;ner som ikke vil blive accepteret i indl&aelig;g og e-mails. For at definere flere ord skal de deles med kommaer.
+spam_protection_submit =    OK - Gem
+
+# Reset / Uninstall:
+reset_forum =               Nulstil forum
+delete_postings =           slet alle indl&aelig;g
+delete_userdata =           slet alle brugerdata (undtaget din admin konto)
+reset_forum_submit =        OK - Nulstil forum
+uninstall_forum =           Afinstaller forum
+uninstall_forum_exp =       Dette vil slette alle forum tabeller. Efter dette vil forumet ikke virke l&aelig;ngere! 
+uninstall_forum_submit =    OK - Afinstaller forum
+error_no_selection_made =   Intet er valgt
+
+# Backup:
+backup_note =               For at bruge backup funktionen skal mappen <i>backup</i> v&aelig;re mulig at skrive til. S&oslash;rg ogs&aring; for at denne mappe ikke er tilg&aelig;ngelig fra nettet!
+backup_file =               Fil
+backup_date =               Dato
+backup_size =               St&oslash;rrelse
+create_backup_complete =    Lav komplet backup
+only_create_backup_of =     Lav kun backup af:
+backup_entries =            indl&aelig;g
+backup_userdata =           brugerdata
+backup_settings =           indstillinger
+backup_categories =         kategorier
+backup_pages =              sider
+backup_smilies =            smilies
+backup_banlists =           banlister
+download_backup_file =      Download backup fil
+delete_selected =           Slet valgte
+check_all =                 marker alle
+uncheck_all =               afmarker alle
+restore =                   Gendan
+delete_backup_file =        Slet backup fil
+delete_backup_file_confirm =  Er du sikker p&aring; du vil slette denne backup fil?
+delete_selected_confirm =   Er du sikker p&aring; du vil slette alle valgte backup filer?
+delete_backup_submit =      OK - Slet
+restore_confirm =           Er du sikker p&aring; du vil gendanne databasen med denne backup fil?<br /><strong>Alle p&aring;virkede tabeller vil blive overskrevet!</strong> 
+restore_safe_mode_warning = Safe Mode Advarsel!
+restore_safe_mode_note =    Da Safe Mode er aktiveret på denne server kan scriptets l&oslash;betid ikke udvides! For at undg&aring; ukomplette backups skal du dele lange backup filer i mindre filer og k&oslash;re dem en efter en!    
+restore_submit =            OK - Gendan
+restore_backup_ok =         Backup'en blev gendannet.
+backup_file_created =       Backup filen er lavet.
+error_file_doesnt_exist =   Filen eksisterer ikke!
+error_delete_backup_file =  Backup fil kunne ikke slettes
+error_create_backup_file =  Filen kunne ikke laves - s&oslash;rg for at du kan skrive til mappen "backup"
+error_restore_mysql =       MySQL fejl: [mysql_error] 
+
+# Update:
+update_current_version =    Nuv&aelig;rende version: <strong>[version]</strong>
+update_instructions_hl =    Hvordan man opdaterer
+update_instructions =       Det er anbefalet at deaktivere forumet mens man opdaterer (afmarker "forum aktiveret" i <a href="index.php?mode=admin&action=settings">forum indstillinger</a>) 
+update_instructions =       Download den seneste version fra <a href="http://mylittleforum.net/">mylittleforum.net</a>
+update_instructions =       Pak script pakken ud, kig efter opdaterings filen i undermappen "update" og upload denne fil i mappen "update" p&aring; din server    
+update_instructions =       Opdater denne side og opdaterings filen skulle dukke op herunder
+update_instructions =       Klik p&aring; filen og f&oslash;lg instrukserne
+update_instructions =       Efter opdateringen f&aring;r du en liste over filer og mapper som er blevet tilf&oslash;jet eller erstattet 
+update_available_files =    Tilg&aelig;ngelige opdaterings filer
+update_no_files_available = Ingen opdaterings filer tilg&aelig;ngelige.
+update_file_title =         K&oslash;r denne opdaterings fil
+update_confirm =            &Oslash;nsker du virkelig at k&oslash;re den f&oslash;lgende opdaterings fil?
+update_submit =             OK - Kør opdatering
+update_successful =         Databasen blev opdateret uden fejl.
+update_items_note =         Upload nu venligst de f&oslash;lgende filer/mapper fra den nye forum pakke (version [version]) p&aring; din server:
+update_download =           Hvis du endnu ikke har disse filer kan du downloade dem [[her]].  
+
+[emails]
+email_subject =             Svar til "[original_subject]"
+email_text =                """Hej [recipient],
+[name] har skrevet et svar til "[original_subject]":
+
+Emne: [subject]
+[text]
+
+URL til dette indlæg: [posting_address]
+
+--- Dit originale indlæg ---
+
+[original_text]"""
+
+email_text_delayed_addition = """---
+Denne notifikation er forsinket fordi indlægget var aktiveret manuelt"""
+
+admin_email_subject =       Nyt indlæg i forumet: [subject]
+admin_email_text =          """Nyt Indlæg af [name]
+Emne: [subject]
+
+[text]
+
+URL til dette indlæg: [posting_address]"""
+admin_email_text_reply =    """Svar af [name]
+Emne: [subject]
+
+[text]
+
+URL til dette indlæg: [posting_address]"""
+admin_reg_user_email_subj = Forum registrering
+admin_reg_user_email_text = """Hej [name],
+velkommen til forumet!
+
+Her er de adgangs data du skal bruge for at logge ind:
+
+Brugernavn: [name]
+Kodeord: [password]
+
+Link til at logge direkte ind:
+[login_link]
+
+Dit kodeord kan ændres efter du er logget ind."""
+
+new_user_email_sj =         Forum registrering
+new_user_email_txt =        """Hej [name],
+velkommen til forumet!
+
+Følg venligst dette link for at aktivere din konto:
+[activate_link]"""
+new_user_notif_sj =         Ny bruger registreret
+new_user_notif_txt =        """Hej [recipient],
+en ny bruger er registreret på forumet.
+Brugernavn: [name]
+E-mail: [email]
+
+[user_link]"""
+new_user_notif_txt_locked = """Hej [recipient],
+en ny bruger er registreret på forumet.
+Brugernavn: [name]
+E-mail: [email]
+
+VIGTIGT: Denne bruger skal låses op før han/hun kan logge ind!"""
+edit_address_email_sj =     Konto aktivering efter ændring af e-mail adresse
+edit_address_email_txt =    """Hej [name],
+e-mail adressen er ændret. Du skal nu aktivere din konto igen ved at følge dette link:
+[activate_link]"""
+pwf_activating_email_sj =   Nyt kodeord
+pwf_activating_email_txt =  """Hej [name],
+denne e-mail er sendt fra forumet ([forum_address]) fordi der er bedt om et nyt kodeord. Klik venligst på linket for at godkende. Et nyt kodeord vil blive lavet og sendt til dig ved at klikke på linket. Hvis denne e-mail er sendt ved en fejl (enten af dig selv eller en anden) skal du venligst ignorere denne e-mail.
+
+[activating_link]"""
+new_pw_email_sj =             "Ny bruger data til forumet"
+new_pw_email_txt =            """Hej [name],
+her er dine nye bruger data:
+
+Brugernavn: [name]
+Kodeord: [password]
+
+Klik her for at logge direkte ind:
+[login_link]
+
+Kodeordet kan ændres efter du er logget ind."""
+contact_email_txt =           """[message]
+
+---
+Denne e-mail er sendt via forumet på [forum_address]."""
+contact_email_txt_user =       """[message]
+
+---
+Denne e-mail er sendt af [user] via forumet på [forum_address]."""
+contact_notification_sj =     Kopi af sendt e-mail: [subject]
+contact_notification_txt =    """Denne e-mail er sendt med din e-mail adresse til [recipient]:
+
+Emne: [subject]
+[message]
+
+---
+Denne e-mail er sendt via forumet på [forum_address]."""
+
+[install]
+installation_title =             Installation
+label_choose_language =          V&aelig;lg venligst et sprog:
+installation_instructions =      Udfyld venligst den f&oslash;lgende formular for at installere forumet. 
+installation_instructions =      Under installations processen bliver filen <strong>config/db_settings.php</strong> overskrevet. S&oslash;rg muligvis for at denne fil ikke er skrivebeskyttet. Du kan fors&oslash;ge at installere forumet uden at &aelig;ndre skriverettighederne f&oslash;rst. Hvis du f&aring;r en fejlbesked pr&oslash;v da at s&aelig;tte CHMOD til 666. Hvis du er n&oslash;dt til at &aelig;ndre skriverettighederne under installationen s&oslash;rg da for at &aelig;ndre dem tilbage til CHMOD 644 efter installationen er f&aelig;rdig.
+installation_instructions =      Mappen <strong>templates_c</strong> skal v&aelig;re mulig at skrive til pga. template maskinen. S&oslash;rg derfor at &aelig;ndre skriverettighederne for denne mappe til CHMOD 770 eller 775 hvis du f&aring;r en fejlbesked under installationen.  
+installation_instructions =      Skriverettigheder (CHMOD) af filer og mapper kan normalt &aelig;ndres med FTP programmet (h&oslash;jre klik p&aring; fil/mappe --> CHMOD el.lign.).   
+installation_instructions =      Mappen <strong>install</strong> kan slettes efter installationen er f&aelig;rdig.   
+inst_basic_settings =            Grundl&aelig;ggende indstillinger
+inst_main_settings_desc =        Nogle grundl&aelig;ggende indstillinger
+inst_admin_settings =            Administrator
+inst_admin_settings_desc =       Data for forum administratoren
+inst_db_settings =               Database
+inst_db_settings_desc =          Tilg&aring; data fra MySQL databasen
+inst_admin_name =                Admin navn
+inst_admin_name_desc =           Forum administratorens navn
+inst_admin_email =               Admin e-mail
+inst_admin_email_desc =          Forum administratorens e-mail adresse
+inst_admin_pw =                  Admin kodeord
+inst_admin_pw_desc =             Forum administratorens kodeord
+inst_admin_pw_conf =             Gentag
+inst_admin_pw_conf_desc =        Gentag kodeordet
+inst_db_host =                   Database host
+inst_db_host_desc =              host navn, normalt "localhost"
+inst_db_user =                   Database bruger
+inst_db_user_desc =              Brugernavn til databasen
+inst_db_pw =                     Database kodeord
+inst_db_pw_desc =                Kodeord til databasen
+inst_db_name =                   Database navn
+inst_db_name_desc =              Databasens navn
+inst_table_prefix =              Tabel pr&aelig;fiks
+inst_table_prefix_desc =         Pr&aelig;fiks til tabeller i databasen
+inst_advanced_options =          Advancerede indstillinger
+inst_advanced_options_desc =     For eksperter - normalt skal du ikke &aelig;ndre noget her
+inst_advanced_database =         Lav database
+inst_advanced_database_desc =    G&oslash;r kun dette hvis den specificerede database ikke eksisterer endnu og du har tilladelse til at lave en database
+inst_advanced_conf_file =        Ingen overskrivelse af database konfigurations fil 
+inst_advanced_conf_file_desc =   G&oslash;r kun dette hvis du allerede har redigeret database konfigurations filen
+create_database =                lav specificeret database
+dont_overwrite_settings =        overskriv ikke database konfigurations fil
+create_db_error =                Databasen kunne ikke laves
+error_create_admin =             Admin kontoen kunne ikke laves             
+error_db_connection =            Database forbindelses fejl - tjek venligst host, bruger og kodeord
+error_db_inexistent =            Specificeret database eksisterer ikke - tjek venligst database navn
+error_sql_file_doesnt_exist =    Installations SQL fil (install.sql) eksisterer ikke 
+error_overwrite_config_file =    Ingen rettighed til at overskrive filen <strong>config/db_settings.php</strong> (s&aelig;t CHMOD 666, nuv&aelig;rende er [CHMOD])
+error_sql =                      SQL fejl
+forum_install_ok =               OK - Installer forum
+error_conf_pw =                  Admin kodeordene passede ikke sammen

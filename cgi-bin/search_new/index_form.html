@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+  <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <TITLE>Perlfect Search 3.30 Indexer</TITLE>
+</HEAD>
+<BODY bgcolor="white" text="black" link="blue" alink="red" vlink="purple">
+
+  <H2><A href="http://perlfect.com/freescripts/search/">Perlfect Search 3.30 Indexer</A></H2>
+
+  <P>Start the indexing process for your site using this form. The password is
+  the value of <tt>$INDEXER_CGI_PASSWORD</tt> in <tt>conf.pl</tt> (you can
+  only use this form if that value is <em>not</em> empty).</P>
+  
+  <P>On first use you'll have to set the <tt>action</tt> value in this file 
+  (<tt>index_form.html</tt>) to your server before you can use this form.</P>
+
+  <FORM method="POST" action="http://www.southoxheybaptistchurch.org.uk/cgi-bin/search/indexer.pl">
+    Password: <INPUT type="password" name="password"><INPUT type="submit" value="Start Indexing">
+  </FORM>
+
+  <P><STRONG>Warning:</STRONG> It is much more secure to use ssh to login the
+  server and start <tt>indexer.pl</tt> from there.</P>
+
+</BODY>
+</HTML>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<!-- the following meta tag is important to avoid cross site scripting attacks: -->
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Ricerca del termine: '<!--cgi: query_str-->'</title>
+</head>
+<body bgcolor="white" text="black" link="blue" alink="red" vlink="purple">
+
+<h2>Risultato della ricerca</h2>
+
+<table border="0" cellpadding="2" cellspacing="0" bgcolor="#dddddd" width="100%">
+<tr>
+	<td valign="top">Ricerca <strong><!--cgi: query_str--></strong> per <!--cgi: baseurl--> </td>
+	<td align="right">Risultato 
+		<strong><!--cgi: first_number--> - <!--cgi: last_number--></strong> di <strong><!--cgi: results_num--></strong>
+		documenti <!--cgi: docs_total--> trovati; <!--cgi: search_time--></td>
+</tr>
+</table>
+
+<!--cgi: ignored_terms-->
+
+<br />
+    
+<dl>
+	<!--loop: results-->
+	<dt><!--item: rank-->. <a href="<!--item: url-->"><!--item: title--></a> (<a href="<!--cgi: search_url-->?q=<!--cgi: query_str_escaped-->&amp;showurl=<!--item: url-->">evidenzia i termini</a>)<br />
+		<font size="-1"><!--item: description--></font><br />
+		<font size="-1" color="#888888"><strong>URL:</strong> <!--item: visibleurl--> &nbsp; 
+			<strong>Score:</strong> <!--item: score--> &nbsp; 
+			<strong>Data:</strong> <!--item: date--> &nbsp;
+			<strong>Dimensione:</strong> <!--item: size--> kB</font>
+		<br />
+		<br />
+	</dt>
+	<!--end: results-->
+</dl>
+
+<br />
+
+<center>
+	<!--cgi: previous--> [ <!--cgi: navbar--> ] <!--cgi: next-->
+	<br><br>
+	<form action="http://dogeron/cgi-bin/search/search.pl" method="get">
+		<input type="hidden" name="p" value="1">
+		<input type="hidden" name="lang" value="it">
+		<input type="hidden" name="include" value="<!--cgi: include-->">
+		<input type="hidden" name="exclude" value="<!--cgi: exclude-->">
+		<input type="hidden" name="penalty" value="<!--cgi: penalty-->">
+		Nuova ricerca: 
+		<select name="mode">
+			<option value="all" <!--cgi: match_all-->>Trova tutte le parole</option>
+			<option value="any" <!--cgi: match_any-->>Trova una qualunque parola</option>
+		</select>
+		<input type="text" name="q" value="<!--cgi: query_str-->">
+		<input type="submit" value="Ricerca"><br><br>
+		Trova '<!--cgi: query_str-->' con
+		<a href="http://www.google.com/search?num=10&amp;query=<!--cgi: query_str_escaped-->">Google</a>
+	</form>
+</center>
+
+<br />
+
+<table border="0" cellpadding="2" cellspacing="0" bgcolor="#dddddd" width="100%">
+<tr>
+	<td>Pagina <!--cgi: current_page--> di <!--cgi: total_pages--></td>
+	<td align="right"><a href="http://perlfect.com/freescripts/search/">Perlfect Search 3.31 (c) Perlfect Solutions 1998-2003</a></td>
+</tr>
+</table>
+
+<br />
+
+</body>
+</html>

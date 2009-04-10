@@ -1,0 +1,339 @@
+/* css Zen Garden submission 020 - 'Friendly Beaches' by Sophie G - www.sophie-g.net */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Sophie G */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designwier's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+body {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 10px;
+	font-family:  Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+}
+
+p {
+	line-height: 180%;
+	}
+#container {
+	background-color: #EDEEF0;
+	border: 1px solid #DAD5D9;
+	padding: 0px;
+	margin: 0px;
+}
+acronym {
+	border-bottom: 1px #6BA0D2 dashed;
+}
+#pageHeader {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 20px;
+	height: 196px;
+	padding: 0px;
+	background: transparent url(/images/background.gif) top left repeat-x;
+
+
+}
+#pageHeader h1 {
+	padding: 65px 0px 0px 0px;
+	margin: 0px;
+	float: left;
+
+}
+#pageHeader h1 span, #pageHeader h2 span {
+	display: none;
+}
+#pageHeader h2 {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	width: 438px;
+	height: 196px;
+	background: transparent url(/images/sobc.jpg) top right no-repeat;
+}
+#pageHeader h2 acronym {
+	color: #FFF;
+	border-bottom: 1px #FFF dashed;
+}
+#logo p.p1 {
+	position: absolute;
+	left: 21px;
+	top: 225px;
+	width: 12em;
+	height: 168px;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #0C2953;
+	text-align: center;
+	font-size: 90%;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	line-height: 110%;
+	color: #FFF;
+	background-image: url(/images/logo.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 100%; 
+	background-color: #9FB95D;	
+}
+#quickSummary p.p1 span {
+	display: block;
+	padding: 3px;
+}
+#intro {
+	padding: 0px 1em 0px 14em;
+}
+#intro h3 {
+	margin: 15px 0px 0px 0px;
+	padding: 0px 20px 2px 6px;
+	text-align: left;
+	font-size: 180%;
+	font-variant: small-caps;
+	color: #577A29;
+	background-image: url(/images/bordDroitPreambleh3.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 0px;
+	background-color: #F6F7F7;
+}
+#intro h3 span {
+	display: block;
+	padding: 42px 0px 15px 45px;
+	background-image: url(/images/reaching_out.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+}
+#intro p {
+	text-align: justify;
+}
+#intro p.p1, #intro p.p2 {
+	margin: 0px;
+	padding: 10px 20px 2px 6px;
+	background-image: url(/images/bordDroitPreamble.gif);
+	background-repeat: repeat-y;
+	background-position: 100% 0px;
+	background-color: #F6F7F7;
+}
+#intro p.p3 {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(/images/bordBasPreamble.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-color: #F6F7F7;
+}
+#intro p.p1 span, #intro p.p2 span, #intro p.p3 span {
+	display: block;
+}
+#intro p.p3 span {
+	margin: 0px;
+	padding: 10px 20px 20px 6px;
+	background-image: url(/images/bordBasPreambleGauche.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+}
+#intro p:first-letter, #intro p span:first-letter {
+	color: #577A29;
+	font-size: 140%;
+	font-weight: bold;
+	margin: 0px 2px 0px 0px;
+}
+#supportingText {
+	margin: 0px;
+	padding: 10px 1em 0px 14em;
+	font-size: 90%;
+}
+#main_section, #bottom_left, #bottom_right1, #bottom_right2 {
+	border: 2px solid #FFF;
+	padding: 0px;
+}
+#main_section {
+	margin: 0px 0px 10px 0px;
+}
+#bottom_left {
+	margin: 0px 0px 10px 0px;
+	float: left;
+	width: 45%;
+}
+#bottom_right1 {
+	margin: 0px 0px 10px 47%;
+}
+#bottom_right2
+	margin: 0px 0px 10px 47%;
+}
+#supportingText h3 {
+	margin: 0px;
+	padding: 5px 30px 1px 2px;
+	text-align: left;
+	font-size: 120%;
+	font-variant: small-caps;
+	color: #577A29;
+	border-bottom: 1px solid #9FB95D;
+	background-color: #F6F7F7;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+#main_section h3 {
+	background-image: url(/images/main_sectionShell.jpg);
+}
+#bottom_left h3 {
+	background-image: url(/images/bottom_leftShell.jpg);
+}
+#bottom_right1 h3 {
+	background-image: url(/images/bottom_right1Shell.jpg);
+}
+#bottom_right2 h3 {
+	background-image: url(/images/bottom_right2Rock.jpg);
+}
+#supportingText p {
+	text-align: justify;
+	margin: 10px 0px 0px 0px;
+	padding: 1px 3px 2px 3px;
+}
+#supportingText p:first-letter, #supportingText p span:first-letter {
+	font-weight: bold;
+}
+#supportingText a:link {
+	color: #0083FF;
+	font-weight: bold;
+}
+#supportingText a:visited {
+	color: #204160;
+	font-weight: bold;
+}
+#supportingText a:hover, #supportingText a:active {
+	color: #8C0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+#linkList, #quickSummary p.p2 {
+	font-size: 90%;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	position: absolute;
+	left: 21px;
+	width: 12em;
+	border: 1px solid #0C2953;
+	padding: 0px;
+	margin: 0px;
+	background-color: #9FB95D;
+}
+#quickSummary p.p2 {
+	height: 50px;
+	text-align: center;
+	top: 217px;
+}
+
+#quickSummary p.p2 span {
+	font-size: 90%;
+	display: block;
+	padding: 3px;
+	color: #FFF;
+}
+#linkList {
+	top: 400px;
+}
+#linkList h3 {
+	background-color: #0C2953;
+	color: #9FB95D;
+	margin: 0px;
+	padding: 30px 1px 1px 1px;
+	background-repeat: no-repeat;
+}
+#linkList h3.sunday {
+	background-image: url(/images/congregation.jpg);
+	background-position: 0% 50%;
+}
+#linkList h3.mid_week {
+	border-top: 1px solid #0C2953;
+	background-image: url(/images/activities.jpg);
+	background-position: 0% 60%;
+}
+#linkList h3.about {
+	border-top: 1px solid #0C2953;
+	background-image: url();
+	background-position: 0% 60%;
+}
+#linkList h3.youth {
+	border-top: 1px solid #0C2953;
+	background-image: url();
+	background-position: 50% 30%;
+}
+#linkList h3:first-letter, #linkList h3 span:first-letter {
+	color: #577A29;
+	font-size: 160%;
+}
+#linkList ul {
+	list-style-type: none;
+	font-size: 90%;
+	color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	background-color: #9FB95D;
+}
+#linkList li {
+	padding: 3px 2px 3px 2px;
+	margin-bottom: 4px;
+}
+#linkList li:hover, #linkList li.sfhover{
+	padding: 2px 1px 2px 1px;
+	border: 1px dotted #0C2953;
+	background-color: #577A29;
+}
+#quickSummary p.p2 span a:link {
+	color: #FFF;
+	font-weight: bold;
+}
+#quickSummary p.p2 span a:visited {
+	color: #204160;
+}
+#quickSummary p.p2 span a:hover, #quickSummary p.p2 span a:active {
+	color: #84C9ED;
+	font-weight: bold;
+	text-decoration: none;
+}
+#linkList a:link, #linkList a:visited {
+	border-left: 6px solid #FFF;
+	padding-left: 2px;
+	font-weight: bold;
+	color: #FFF;
+}
+#linkList a:visited {
+	color: #FFF;
+}
+#linkList a:hover, #linkList a:active {
+	border-left: 6px solid #84C9ED;
+	padding-left: 2px;
+	color: #84C9ED;
+	text-decoration: none;
+	font-weight: bold;
+}
+#linkList a.c:link, #linkList a.c:visited {
+	border-left: none;
+	padding-left: 0px;
+	font-weight: normal;
+	color: #FFF;
+}
+#linkList a.c:hover, #linkList a.c:active {
+	border-left: none;
+	padding-left: 0px;
+	color: #84C9ED;
+	text-decoration: none;
+}
+#linkList acronym {
+	border-bottom: 1px #FFF dashed;
+}
+#footer {
+	clear: both;
+	text-align: right;
+	margin: 0px -16em 0px 0px;
+	padding: 25px 0px 0px 0px;
+}
+#footer a {
+	font-size: 70%;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}

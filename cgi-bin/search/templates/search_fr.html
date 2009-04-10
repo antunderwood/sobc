@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<!-- the following meta tag is important to avoid cross site scripting attacks: -->
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Votre Recherche du terme: '<!--cgi: query_str-->'</title>
+</head>
+<body bgcolor="white" text="black" link="blue" alink="red" vlink="purple">
+
+<h2>Résultats de Recherche</h2>
+
+<table border="0" cellpadding="2" cellspacing="0" bgcolor="#dddddd" width="100%">
+<tr>
+	<td valign="top">Recherche <strong><!--cgi: query_str--></strong> sur <!--cgi: baseurl--> </td>
+	<td align="right"> 
+		<strong><!--cgi: first_number--> - <!--cgi: last_number--></strong> Résultats sur <strong><!--cgi: results_num--></strong>
+		dans <!--cgi: docs_total--> documents; <!--cgi: search_time--></td>
+</tr>
+</table>
+
+<!--cgi: ignored_terms-->
+
+<br />
+    
+<dl>
+	<!--loop: results-->
+	<dt><!--item: rank-->. <a href="<!--item: url-->"><!--item: title--></a><br />
+		<font size="-1"><!--item: description--></font><br />
+		<font size="-1" color="#888888"><strong>URL:</strong> <!--item: visibleurl--> &nbsp; 
+			<strong>Score:</strong> <!--item: score--> &nbsp; 
+			<strong>Date:</strong> <!--item: date--> &nbsp;
+			<strong>Taille:</strong> <!--item: size--> kB</font>
+		<br />
+		<br />
+	</dt>
+	<!--end: results-->
+</dl>
+
+<br />
+
+<center>
+	<!--cgi: previous--> [ <!--cgi: navbar--> ] <!--cgi: next-->
+	<br /><br />
+	<form action="<!--cgi: search_url-->" method="get">
+		<input type="hidden" name="p" value="1" />
+		<input type="hidden" name="lang" value="<!--cgi: lang-->" />
+		<input type="hidden" name="include" value="<!--cgi: include-->" />
+		<input type="hidden" name="exclude" value="<!--cgi: exclude-->" />
+		<input type="hidden" name="penalty" value="<!--cgi: penalty-->" />
+		Nouvelle recherche: 
+		<select name="mode">
+			<option value="all"<!--cgi: match_all-->>Trouver tous les mots</option>
+			<option value="any"<!--cgi: match_any-->>Trouver au moins un mot</option>
+		</select>
+		<input type="text" name="q" value="<!--cgi: query_str-->" />
+		<input type="submit" value="Recherche" /><br /><br />
+		Recherche '<!--cgi: query_str-->' avec
+		<a href="http://www.google.com/search?num=10&amp;query=<!--cgi: query_str_escaped-->">Google</a>
+	</form>
+</center>
+
+<br />
+
+<table border="0" cellpadding="2" cellspacing="0" bgcolor="#dddddd" width="100%">
+<tr>
+	<td>Page <!--cgi: current_page--> sur <!--cgi: total_pages--></td>
+	<td align="right"><a href="http://perlfect.com/freescripts/search/">Perlfect Search 3.31 (c) Perlfect Solutions 1998-2003</a></td>
+</tr>
+</table>
+
+<br />
+
+</body>
+</html>
