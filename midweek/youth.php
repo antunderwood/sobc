@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2><span>Activities for young people</span></h2>
 	<p>
@@ -8,3 +9,4 @@
 		<img src="/images/max5.jpg" title="video games"><img src="/images/max6.jpg" title="more Connect 4">
 	</p>
 </div>
+<?php include("../includes/footer.php");?>

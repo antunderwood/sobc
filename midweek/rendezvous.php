@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2><span>Rendezvous</span></h2>
 	<p>
@@ -5,3 +6,4 @@
 	Occaisionally we have trips to places such as Kew Gardens.
 	</p>
 </div>
+<?php include("../includes/footer.php");?>

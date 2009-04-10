@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 <h2><span>More about us</span></h2>
 The best way to find out about us is by coming along in person, but this section should give you an idea who we are and what is important to us. 
@@ -22,3 +23,4 @@ We are a Baptist Church within the Central Area of the Baptist Union of Great Br
 We are also members of the <a href="http://www.eauk.org">Evangelical Alliance</a> and have good informal links with local churches in the area. 
 </p>
 </div>
+<?php include("../includes/footer.php");?>

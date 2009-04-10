@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2><span>Bible Teaching</span></h2>
 	<p>
@@ -28,11 +29,11 @@
 
 		<p>The Bible is written by lots of human authors, but God inspired and led them to write what they did. It's not just intended to be an interesting book, a description of what happened in the past. It is there to speak personally to us readers about our relationship to God and how that influences the whole of our lives.</p> 
 
-		<p>The most important single step in this is to come to recognise our need to come to God on his terms: To accept that we can't be right with him, we can't be OK with him without trusting in Jesus. More specifically, we need to trust that the wrong we have done against God by ignoring him, by living as if he didn't matter leads to us being separated from him. The Bible calls it sin and says it leads to death (<a href="/cgi-bin/bible.cgi?height=300&width=600&passage=Romans%206:23" title="Romans 6 v 23" class="thickbox">Romans 6:23</a>). "The wages of sin are death." Death here is especially talking about separation from life and from God. Sin is when I put 'me' or something else at the centre of my life instead of God. The Bible also says that "all have sinned and fall short of the glory of God" (<a href="/cgi-bin/bible.cgi?height=300&width=600&passage=Romans%203:23" title="Romans 3 v 23" class="thickbox">Romans 3:23</a>).</p> 
+		<p>The most important single step in this is to come to recognise our need to come to God on his terms: To accept that we can't be right with him, we can't be OK with him without trusting in Jesus. More specifically, we need to trust that the wrong we have done against God by ignoring him, by living as if he didn't matter leads to us being separated from him. The Bible calls it sin and says it leads to death (<a href="/cgi-bin/bible.cgi?height=300&width=600&passage=Romans%206:23" title="Romans 6 v 23" class="lightview">Romans 6:23</a>). "The wages of sin are death." Death here is especially talking about separation from life and from God. Sin is when I put 'me' or something else at the centre of my life instead of God. The Bible also says that "all have sinned and fall short of the glory of God" (<a href="/cgi-bin/bible.cgi?height=300&width=600&passage=Romans%203:23" title="Romans 3 v 23" class="lightview">Romans 3:23</a>).</p> 
 
 		<p>Christians are not people who have lived good lives to earn their way into God's favour or made themselves right with him. Neither are we people who blindly hope 'it will work our OK in the end' as so many people do. Christians are people who realise that we need God to forgive us for what we have done - and what we have said and thought. We have come to believe that in dying Jesus took the penalty for our sin. Sin led to the death penalty, but he took it for us.</p> 
 
-		Jesus said, "Greater love has no-one than this, that he lay down his life for his friends." (<a href="/cgi-bin/bible.cgi?height=300&width=600&passage=John%2015:13" title="John 15 v 13" class="thickbox">John 15:13</a>). 
+		Jesus said, "Greater love has no-one than this, that he lay down his life for his friends." (<a href="/cgi-bin/bible.cgi?height=300&width=600&passage=John%2015:13" title="John 15 v 13" class="lightview">John 15:13</a>). 
 
 		<p>And that's what he did.  The gospels explain what happened, and start to tell us what it means. The letters of the New Testament explain what it means for us more fully. But it's all more than an explanation, it's an invitation. It's written to people long ago, it's written to everyone - and it's written to you. It's an invitation to receive forgiveness, and to live the new life that Jesus offers. It means asking God to help you live the kind of life he wants for you. </p>
 	
@@ -40,3 +41,4 @@
 		<p>You can view Bibles on the internet on several websites. One of the simplest to use to read the Bible and find out about the Bible is at <a href="http://www.ibs.org/">www.ibs.org</a>  This is the website of the International Bible Society, and has lots of helpful information for the beginner as well as those who know something already. If you want to read the Bible in this way look under the online bibles section.  Another website if you want to delve further is   <a href="http://www.biblegateway.com ">www.biblegateway.com</a>.
 	</p>
 </div>
+<?php include("../includes/footer.php");?>

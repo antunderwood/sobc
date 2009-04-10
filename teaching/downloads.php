@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2><span>Service downloads</span></h2>
 	<p>On this page you will find downloads of some of our recent messages from Sunday morning services in mp3 format. Right click the links to dave the files to your computer</p>
@@ -44,4 +45,4 @@
         <strong>9th March: </strong>Steve Hobbis: <a href="downloads/9.03.08.mp3">Psalm 33: Do not trust in horses!</a><br/>
         N.B: there is a short break in this recording due to technical difficulties.
 </div>
-    
+<?php include("../includes/footer.php");?>
