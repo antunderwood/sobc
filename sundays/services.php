@@ -1,8 +1,9 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2>Worship Services</h1>
 		<h3>Sunday Morning 11am.</h3>
 		<p>
-		Our <a href="/sundays/what_to_expect.mhtml">regular services</a>, an opportunity to worship, learn, pray and share together. The children and young people normally have their own groups for part of the service.<br>
+		Our <a href="/sundays/what_to_expect.php">regular services</a>, an opportunity to worship, learn, pray and share together. The children and young people normally have their own groups for part of the service.<br>
 		For more information on the subjects that we are exploring in the teaching, please look at the '<a href="/teaching/sundays.mhtml">Teaching..Sundays</a>' section of this website.
 		<h3>Experiencing God's love: Sunday Mornings, February - March</h3>
 		<p>
@@ -77,3 +78,4 @@
 		<img src="/images/prayer2.jpg" title="Prayer"><br>
 		</p>
 </div>
+<?php include("../includes/footer.php");?>

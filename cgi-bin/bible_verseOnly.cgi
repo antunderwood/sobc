@@ -1,4 +1,5 @@
-#!/usr/local/bin/ruby
+#!C:/Ruby/bin/ruby.exe
+#/usr/local/bin/ruby
 require "cgi"
 cgi = CGI.new("html3")  # add HTML generation methods
 passage = cgi['passage']
@@ -44,7 +45,7 @@ version_hash={
 versions=""
 version_hash.each_key {|version_number|
 	if (version_number != version)
-		versions += "<span onclick=\"$('#passage').load('/cgi-bin/bible_verseOnly.cgi?passage="+passage+"&version="+version_number+"')\">"+version_hash[version_number]+"</span>&nbsp;:&nbsp;"
+		versions += "<span onclick=\"new Ajax.Updater('passage', '/cgi-bin/bible_verseOnly.cgi?passage="+passage+"&version="+version_number+"',{method :'get'})\">"+version_hash[version_number]+"</span>&nbsp;:&nbsp;"
 	end
 }
 versions.sub(/&nbsp;:&nbsp;$/,"")

@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<p>
 		<h2>Special Sundays - 10.45 am</h2>
@@ -16,3 +17,4 @@
 			 </ul>
 	</p>
 </div>
+<?php include("../includes/footer.php");?>

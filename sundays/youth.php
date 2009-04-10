@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 <h2><span>Activities for Children and Young People on Sundays </span></h2>
 <table width="100%">
@@ -79,3 +80,4 @@
 </table>
 </p>
 </div>
+<?php include("../includes/footer.php");?>

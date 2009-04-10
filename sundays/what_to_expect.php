@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 <h2><span>What to expect on a typical Sunday morning service</span></h2>
 <table width="100%">
@@ -76,3 +77,4 @@ During this time services are 'All-age'. This means that we all stay together in
 These summer services tend to be shorter than normal and the sermon part (Bible based talk) is also shorter or broken up into bite-sized chunks.
 </p>
 </div>
+<?php include("../includes/footer.php");?>

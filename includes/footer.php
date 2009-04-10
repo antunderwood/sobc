@@ -18,41 +18,41 @@
 			<h3 class="sunday"><span>Sunday<br>Services:</span></h3>
 			<!-- list of links begins here. There will be no more than 8 links per page -->
 			<ul>
-				<li><a href="/sundays/services.mhtml" title="Sundays: Worship Services" accesskey="a">Worship Services &raquo;</a></li>
-				<li><a href="/sundays/special_sundays.mhtml" title="Sundays: Special Sundays" accesskey="b">Special Sundays &raquo;</a></li>
-				<li><a href="/sundays/youth.mhtml" title="Sundays: Children and Youth" accesskey="c">Children and Youth &raquo;</a></li>
-				<!--<li><a href="/sundays/youth.mhtml#creche" title="Sundays: Under 2's" accesskey="c">Creche</a>
-				<li><a href="/sundays/youth.mhtml#sparklers" title="Sundays: Ages 2 to 5" accesskey="d">Ages 2 to 5</a>
-				<li><a href="/sundays/youth.mhtml#g-team" title="Sundays: Ages 6 to 11" accesskey="e">Ages 6 to 11</a>
-				<li><a href="/sundays/youth.mhtml#action-attack" title="Sundays: Ages 11 to 14" accesskey="f">Ages 11 to 14</a>
-				<li><a href="/sundays/youth.mhtml#focus" title="Sundays: Ages 15 to young adult" accesskey="g">Ages 15 to 18+</a>-->
+				<li><a href="/sundays/services.php" title="Sundays: Worship Services" accesskey="a">Worship Services &raquo;</a></li>
+				<li><a href="/sundays/special_sundays.php" title="Sundays: Special Sundays" accesskey="b">Special Sundays &raquo;</a></li>
+				<li><a href="/sundays/youth.php" title="Sundays: Children and Youth" accesskey="c">Children and Youth &raquo;</a></li>
+				<!--<li><a href="/sundays/youth.php#creche" title="Sundays: Under 2's" accesskey="c">Creche</a>
+				<li><a href="/sundays/youth.php#sparklers" title="Sundays: Ages 2 to 5" accesskey="d">Ages 2 to 5</a>
+				<li><a href="/sundays/youth.php#g-team" title="Sundays: Ages 6 to 11" accesskey="e">Ages 6 to 11</a>
+				<li><a href="/sundays/youth.php#action-attack" title="Sundays: Ages 11 to 14" accesskey="f">Ages 11 to 14</a>
+				<li><a href="/sundays/youth.php#focus" title="Sundays: Ages 15 to young adult" accesskey="g">Ages 15 to 18+</a>-->
 			</ul>
 		</div>
 	
 		<div id="midweek_links">
 			<h3 class="mid_week"><span>Mid-Week<br>Activities</span></h3>
 			<ul>
-				<li><a href="/midweek/rendezvous.mhtml" title="Older people" accesskey="h">Older People &raquo;</a>&nbsp;</li>
-				<li><a href="/midweek/youth.mhtml" title="Youth group" accesskey="i">Youth Group &raquo;</a></li>
-				<li><a href="/midweek/younger_children.mhtml" title="Younger Children" accesskey="j">Younger children &raquo;</a></li>
+				<li><a href="/midweek/rendezvous.php" title="Older people" accesskey="h">Older People &raquo;</a>&nbsp;</li>
+				<li><a href="/midweek/youth.php" title="Youth group" accesskey="i">Youth Group &raquo;</a></li>
+				<li><a href="/midweek/younger_children.php" title="Younger Children" accesskey="j">Younger children &raquo;</a></li>
 			</ul>
 		</div>
 		<div id="teaching_links">
 			<h3 class="teaching"><span>Teaching</span></h3>
 			<ul>
-				<li><a href="/teaching/sundays.mhtml" title="On Sundays" accesskey="k">On Sundays &raquo;</a></li>
-				<li><a href="/teaching/downloads.mhtml" title="On Sundays" accesskey="l">Service Downloads &raquo;</a></li>
-				<li><a href="/teaching/bible.mhtml" title="Bible teaching" accesskey="m">Bible &raquo;</a></li>
-				<li><a href="/teaching/christian.mhtml" title="What is a Christan?" accesskey="n">What is a Christan? &raquo;</a></li>
+				<li><a href="/teaching/sundays.php" title="On Sundays" accesskey="k">On Sundays &raquo;</a></li>
+				<li><a href="/teaching/downloads.php" title="On Sundays" accesskey="l">Service Downloads &raquo;</a></li>
+				<li><a href="/teaching/bible.php" title="Bible teaching" accesskey="m">Bible &raquo;</a></li>
+				<li><a href="/teaching/christian.php" title="What is a Christan?" accesskey="n">What is a Christan? &raquo;</a></li>
 			</ul>
 		</div>
 		<div id="about_links">
 			<h3 class="about"><span>About Us<br>&nbsp;</span></h3>
 			<ul>
-				<li><a href="/about/more_about_us.mhtml" title="More about us" accesskey="o">More about us &raquo;</a>&nbsp;</li>
-				<li><a href="/about/outreach.mhtml" title="Outreach" accesskey="p">Outreach &raquo;</a>&nbsp;</li>
-				<li><a href="/about/building.mhtml" title="Building Project" accesskey="q">Building Project &raquo;</a>&nbsp;</li>
-				<li><a href="/about/where.mhtml" title="Where are we?" accesskey="r">Where are we? &raquo;</a>&nbsp;</li>
+				<li><a href="/about/more_about_us.php" title="More about us" accesskey="o">More about us &raquo;</a>&nbsp;</li>
+				<li><a href="/about/outreach.php" title="Outreach" accesskey="p">Outreach &raquo;</a>&nbsp;</li>
+				<li><a href="/about/building.php" title="Building Project" accesskey="q">Building Project &raquo;</a>&nbsp;</li>
+				<li><a href="/about/where.php" title="Where are we?" accesskey="r">Where are we? &raquo;</a>&nbsp;</li>
 			</ul>
 		</div>
 		<div id="search">

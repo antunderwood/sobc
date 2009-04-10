@@ -25,12 +25,19 @@
 	</script>
 
 <?if (preg_match("/\/teaching\//", $_SERVER['REQUEST_URI'])) {?>
-	<!-- thickbox stuff -->
-	<script type="text/javascript" src="<?= $html_root?>/javascript/jquery.js"></script>
-	<script type="text/javascript" src="<?= $html_root?>/javascript/thickbox.js"></script>
-	<link rel="stylesheet" href="<?= $html_root?>css/thickbox.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?= $html_root?>/css/bible_passage.css" type="text/css" media="screen" />
-	<!-- end of thickbox stuff -->
+	<!-- thickbox stuff
+	<script type="text/javascript" src="</javascript/jquery.js"></script>
+	<script type="text/javascript" src="/javascript/thickbox.js"></script>
+	<link rel="stylesheet" href="/css/thickbox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/bible_passage.css" type="text/css" media="screen" />
+	end of thickbox stuff -->
+	<!-- lightview stuff -->
+	<script type="text/javascript" src="/javascript/prototype1.6.1.js"></script>
+	<script type="text/javascript" src="/javascript/scriptaculous.js"></script>
+	<script type="text/javascript" src="/javascript/lightview.js"></script>
+	<link rel="stylesheet" href="/css/lightview.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/bible_passage.css" type="text/css" media="screen" />
+	<!-- end of lightview stuff -->
 <?}?>
 </head>
 

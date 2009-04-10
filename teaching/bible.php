@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2><span>Bible Teaching</span></h2>
 	<p>
@@ -40,3 +41,4 @@
 		<p>You can view Bibles on the internet on several websites. One of the simplest to use to read the Bible and find out about the Bible is at <a href="http://www.ibs.org/">www.ibs.org</a>  This is the website of the International Bible Society, and has lots of helpful information for the beginner as well as those who know something already. If you want to read the Bible in this way look under the online bibles section.  Another website if you want to delve further is   <a href="http://www.biblegateway.com ">www.biblegateway.com</a>.
 	</p>
 </div>
+<?php include("../includes/footer.php");?>

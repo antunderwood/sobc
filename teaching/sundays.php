@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 	<h2><span>Teaching on Sundays</span></h2>
 	<p>
@@ -32,3 +33,4 @@
 	<p> 
 	Recent series included looking at promises that God gave to people in the Old Testament.
 </div>
+<?php include("../includes/footer.php");?>

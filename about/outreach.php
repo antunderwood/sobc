@@ -1,3 +1,4 @@
+<?php include("../includes/header.php");?>
 <div id="main_section">
 <h2><span>Outreach</span></h2>
 <p>
@@ -25,3 +26,4 @@
 	</p>
 </p>
 </div>
+<?php include("../includes/footer.php");?>
