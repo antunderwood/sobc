@@ -22,6 +22,10 @@
 	padding: 0;
 	margin: 0;
 }
+.lv_Container img{
+	border: 0px;
+}
+
 
 .lv_Button {
 	cursor: pointer;
@@ -267,6 +271,7 @@
 }
 .lv_DataText { width: 100%; }
 .lv_DataText .lv_Title {
+	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 2px;
 }

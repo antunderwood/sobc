@@ -58,13 +58,7 @@
 				<key>StateType</key>
 				<string>PreviewTab</string>
 				<key>URL</key>
-				<string>http://localhost/about/where_static.php</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/ants/Sites/sobc/php/test_site/css/sobc.css</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
+				<string>http://localhost/</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
@@ -75,6 +69,12 @@
 			<dict>
 				<key>DocumentURL</key>
 				<string>file://localhost/Users/ants/Sites/sobc/about/where_static.php</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ants/Sites/sobc/css/lightview.css</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

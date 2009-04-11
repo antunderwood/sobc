@@ -92,12 +92,32 @@ function expired($file){
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
     <tbody>
         <tr>
-            <td width="530"><img width="530" height="236" src="/images/new_building_small.jpg" alt="New Building" /></td>
+            <td width="530"><img width="530" height="236" src="/images/new_building_small.jpg" alt="New Building" id="new_building"/></td>
+            <script type="text/javascript" language="javascript">
+			new Tip('new_building', "A simple tooltip, nothing fancy just yet ...<br><a href='' class='lightview' rel='gallery[building]'>Slideshow</a>", { 
+				hideOn: { element: 'closeButton', event: 'click' },
+				stem: 'topRight',
+				hook: { target: 'bottomMiddle', tip: 'topRight' },
+				offset: { x: 6, y: 0 },
+				width: 'auto',
+				border: 1,
+				radius: 1 });
+			
+			
+			//]]>
+			</script>
             <td style="vertical-align: top; padding: 0px 0px 0px 10px;">
               We have outgrown our existing building and so are embarking on an exciting project to build an extension to of the church.<br>
               We have identified a 3 phase approach to the work. Our builders are preparing to start phase 1 - the shell of the new building. We are in the process of raising the finances for phase 2 - the completion of the new part of the building. Our immediate target is to raise &#163;100,000 to add to what has been given and pledged so far. <br>
-<br>For more detailed information on the building project <a href="/about/building.php">Click here</a>
-			
+<br>For more detailed information on the building project <a href="/about/building.php">Click here</a><br>
+				<a href='/images/building/digger small.png' class='lightview' title="Digger" rel='gallery[building]'>Slideshow</a>
+				<a href='/images/building/digger 2 small.png' class='lightview' title="Digger again"rel='gallery[building]'a>
+				<a href='/images/building/foundations small.png' class='lightview' title="Foundations"rel='gallery[building]'a>
+				<a href='/images/building/crane small.png' class='lightview' title="Crane"rel='gallery[building]'a>
+				<a href='/images/building/structure small.png' class='lightview' title="Steel framework"rel='gallery[building]'a>
+				<a href='/images/building/bricks small.png' class='lightview' title="Brickwork going up"rel='gallery[building]'a>
+				<a href='/images/building/sign small.png' class='lightview' title="Sign about building"rel='gallery[building]'a>
+
 			</td>
         </tr>
     </tbody>

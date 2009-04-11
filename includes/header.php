@@ -24,13 +24,7 @@
 	<script src="http://maps.google.co.uk/maps?file=api&v=2&key=ABQIAAAAOXRDObQXKO6TqkaeH1QD_hSxASmYSXfKd_MzuqJoMusPKVzvPRSSpzzVYz3Ai8q1idvrzSiPfI4EqQ" type="text/javascript">
 	</script>
 
-<?if (preg_match("/\/teaching\//", $_SERVER['REQUEST_URI'])) {?>
-	<!-- thickbox stuff
-	<script type="text/javascript" src="</javascript/jquery.js"></script>
-	<script type="text/javascript" src="/javascript/thickbox.js"></script>
-	<link rel="stylesheet" href="/css/thickbox.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="/css/bible_passage.css" type="text/css" media="screen" />
-	end of thickbox stuff -->
+<?if (preg_match("/\/teaching\//", $_SERVER['REQUEST_URI']) || preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
 	<!-- lightview stuff -->
 	<script type="text/javascript" src="/javascript/prototype1.6.1.js"></script>
 	<script type="text/javascript" src="/javascript/scriptaculous.js"></script>
@@ -38,6 +32,13 @@
 	<link rel="stylesheet" href="/css/lightview.css" type="text/css" media="screen" />
 	<!-- end of lightview stuff -->
 <?}?>
+<?if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
+	<!-- prototip stuff -->
+	<script type="text/javascript" src="/javascript/prototip.js"></script>
+	<link rel="stylesheet" href="/css/prototip.css" type="text/css" media="screen" />
+	<!-- end of prototip stuff -->
+<?}?>
+
 </head>
 
 
