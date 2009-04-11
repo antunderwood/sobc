@@ -12,9 +12,4 @@
 /mason/*
 /php/*
 /FCKeditor1/
-/index.mhtml
-/index1.html
-/index2.html
-/index-backup.html
-/index-original.html
 _*
