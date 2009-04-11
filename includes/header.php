@@ -24,44 +24,44 @@
 	<script src="http://maps.google.co.uk/maps?file=api&v=2&key=ABQIAAAAOXRDObQXKO6TqkaeH1QD_hSxASmYSXfKd_MzuqJoMusPKVzvPRSSpzzVYz3Ai8q1idvrzSiPfI4EqQ" type="text/javascript">
 	</script>
 
-<?if (preg_match("/\/teaching\//", $_SERVER['REQUEST_URI']) || preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
+<?php  if (preg_match("/\/teaching\//", $_SERVER['REQUEST_URI']) || preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") { ?>
 	<!-- lightview stuff -->
 	<script type="text/javascript" src="/javascript/prototype1.6.1.js"></script>
 	<script type="text/javascript" src="/javascript/scriptaculous.js"></script>
 	<script type="text/javascript" src="/javascript/lightview.js"></script>
 	<link rel="stylesheet" href="/css/lightview.css" type="text/css" media="screen" />
 	<!-- end of lightview stuff -->
-<?}?>
-<?if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
+<?php } ?>
+<?php if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") { ?>
 	<!-- prototip stuff -->
 	<script type="text/javascript" src="/javascript/prototip.js"></script>
 	<link rel="stylesheet" href="/css/prototip.css" type="text/css" media="screen" />
 	<!-- end of prototip stuff -->
-<?}?>
+<?php } ?>
 
 </head>
 
 
-<?if (preg_match("/\/about\/where\.php/", $_SERVER['REQUEST_URI'] )) {?>
+<?php if (preg_match("/\/about\/where\.php/", $_SERVER['REQUEST_URI'] )) { ?>
 <body id="sobc" onload="showMap(map);">
-<?}else{?>
+<?php }else{ ?>
 <body id="sobc">
-<?}?>
+<?php } ?>
 
 <div id="container">
 	<div id="top">
-<?if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
+<?php if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") { ?>
 		<div id="pageHeader">
 			<a href="/index.php"><h1>South Oxhey<br>Baptist Church</h1></a>
 			<h3>140 Gosforth Lane South Oxhey WD19 7BX : 0208 421 4054 <br> <a HREF="mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#111;&#117;&#116;&#104;&#111;&#120;&#104;&#101;&#121;&#098;&#097;&#112;&#116;&#105;&#115;&#116;&#099;&#104;&#117;&#114;&#099;&#104;&#046;&#111;&#114;&#103;&#046;&#117;&#107;">&#105;&#110;&#102;&#111;&#064;&#115;&#111;&#117;&#116;&#104;&#111;&#120;&#104;&#101;&#121;&#098;&#097;&#112;&#116;&#105;&#115;&#116;&#099;&#104;&#117;&#114;&#099;&#104;&#046;&#111;&#114;&#103;&#046;&#117;&#107;</a></h3>
 			<h2></h2>
 		</div>
-<?}else{?>
+<?php }else{ ?>
 		<div id="short_pageHeader">
 			<a href="/index.php"><h1>South Oxhey<br>Baptist Church</h1></a>
 			<h3>140 Gosforth Lane South Oxhey WD19 7BX : 0208 421 4054 <br> <a HREF="mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#111;&#117;&#116;&#104;&#111;&#120;&#104;&#101;&#121;&#098;&#097;&#112;&#116;&#105;&#115;&#116;&#099;&#104;&#117;&#114;&#099;&#104;&#046;&#111;&#114;&#103;&#046;&#117;&#107;">&#105;&#110;&#102;&#111;&#064;&#115;&#111;&#117;&#116;&#104;&#111;&#120;&#104;&#101;&#121;&#098;&#097;&#112;&#116;&#105;&#115;&#116;&#099;&#104;&#117;&#114;&#099;&#104;&#046;&#111;&#114;&#103;&#046;&#117;&#107;</a></h3>
 		</div>
-<?}?>
+<?php } ?>
 	</div>	
 
 		<!--    LOGO DIV
@@ -70,7 +70,7 @@
 			<p class="p1">&nbsp;</p>
 		</div></a>-->
 <!-- OLD URL CHECK  %if ($r->uri=~/\/cgi-bin\/mason_handler\.cgi\/index.php/) {-->
-<?if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
+<?php if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") { ?>
 	<div id="intro">
 		<h3><span>Church Mission Statement</span></h3>
 		<p class="p1"><span>We aim to be a welcoming community of people with Jesus Christ at the Centre who</span></p>
@@ -81,5 +81,5 @@
 	<div id="introImage">
 		&nbsp;
 	</div>
-<?}?>		
+<?php } ?>		
 	<div id="supportingText">

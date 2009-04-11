@@ -3,11 +3,11 @@
 </div>
 </div>
 
-<?if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") {?>
+<?php if (preg_match("/index.*\.php/", $_SERVER['REQUEST_URI']) ||  $_SERVER['REQUEST_URI']  == "" || $_SERVER['REQUEST_URI'] == "/") { ?>
 <div id="linkList">
-<?}else{?>
+<?php }else{ ?>
 <div id="short_linkList">
-<?}?>
+<?php } ?>
 <!--extra div for flexibility - this list will probably be the trickiest spot you'll deal with -->
 	<div id="linkList2">
 	

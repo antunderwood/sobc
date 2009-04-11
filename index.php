@@ -1,8 +1,6 @@
 <?php include("includes/header.php");?>
 <!-- function to test for expiring pages  -->
-<?
-
-$expired1 = expired("coming_soon_expiry.txt");
+<?php $expired1 = expired("coming_soon_expiry.txt");
 $expired2 = expired("coming_soon_expiry2.txt");
 function expired($file){
 	$fh = fopen($file, 'r');
@@ -28,13 +26,12 @@ function expired($file){
 		}
 	}
 	return $expired;
-}
-?>
-<? if (!$expired1 || !$expired2){?>
+} 
+if (!$expired1 || !$expired2){ ?>
 	<div id="coming_soon">
 	<h3><span>Coming Soon</span></h3>
-<?}?>
-<?if (!$expired1){?>
+<?php } ?>
+<?php if (!$expired1){ ?>
 
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
     <tbody>
@@ -58,8 +55,8 @@ function expired($file){
     </tbody>
 </table>
 <hr>
-<?}?>
-<?if (!$expired2){?>
+<?php }
+if (!$expired2){?>
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
 	    <tbody>
       <tr>
@@ -82,10 +79,10 @@ function expired($file){
 	    </tbody>
 	</table>
 	<br>
-<?}?>
-<?if (!$expired1 || !$expired2){?>
+<?php }
+if (!$expired1 || !$expired2){?>
 	</div>
-<?}?>
+<?php } ?>
 <a name="building_news"></a>
 <div id="building_project">
 <h3><span>New Building Plans</span></h3>
@@ -94,12 +91,13 @@ function expired($file){
         <tr>
             <td width="530"><img width="530" height="236" src="/images/new_building_small.jpg" alt="New Building" id="new_building"/></td>
             <script type="text/javascript" language="javascript">
-			new Tip('new_building', "A simple tooltip, nothing fancy just yet ...<br><a href='' class='lightview' rel='gallery[building]'>Slideshow</a>", { 
+			new Tip('new_building', "We are building the outer shell with the money we have and looking to continue with the inside as money becomes available. We have been talking about 'stepping out of the boat' for years. This is it. The rain and mud of January made the idea of the boat and water all very literal!<span style='text-align: center'><h2>South Oxhey Baptist Church</h2>Building to serve the peopleof South Oxhey<br>New worship area<br>Activity rooms for all ages<br>Open house with catering facilities<h2>… aiming to be a welcoming community of people with Jesus Christ at the centre</h2></span>For a slideshow of the current building work in progress please <a href='javascript:;' onclick=\"$('new_building').prototip.hide();Lightview.show('slideshow');\">click here</a>", { 
 				hideOn: { element: 'closeButton', event: 'click' },
-				stem: 'topRight',
-				hook: { target: 'bottomMiddle', tip: 'topRight' },
-				offset: { x: 6, y: 0 },
-				width: 'auto',
+				style: 'protogrey',
+				stem: 'topMiddle',
+				hook: { target: 'bottomMiddle', tip: 'topMiddle' },
+				offset: { x: 0, y: -10 },
+				width: 400,
 				border: 1,
 				radius: 1 });
 			
@@ -109,13 +107,13 @@ function expired($file){
             <td style="vertical-align: top; padding: 0px 0px 0px 10px;">
               We have outgrown our existing building and so are embarking on an exciting project to build an extension to of the church.<br>
               We have identified a 3 phase approach to the work. Our builders are preparing to start phase 1 - the shell of the new building. We are in the process of raising the finances for phase 2 - the completion of the new part of the building. Our immediate target is to raise &#163;100,000 to add to what has been given and pledged so far. <br>
-<br>For more detailed information on the building project <a href="/about/building.php">Click here</a><br>
-				<a href='/images/building/digger small.png' class='lightview' title="Digger" rel='gallery[building]'>Slideshow</a>
-				<a href='/images/building/digger 2 small.png' class='lightview' title="Digger again"rel='gallery[building]'a>
-				<a href='/images/building/foundations small.png' class='lightview' title="Foundations"rel='gallery[building]'a>
-				<a href='/images/building/crane small.png' class='lightview' title="Crane"rel='gallery[building]'a>
-				<a href='/images/building/structure small.png' class='lightview' title="Steel framework"rel='gallery[building]'a>
-				<a href='/images/building/bricks small.png' class='lightview' title="Brickwork going up"rel='gallery[building]'a>
+<br>For more detailed information on the building project <a href="/about/building.php">click here</a><br>
+				For a slideshow of the current building work in progress please <a id='slideshow' href='/images/building/digger small.png' class='lightview' title="Digger" rel='gallery[building]' onclick="$('new_building').prototip.hide();">click here</a>
+				<a href='/images/building/digger 2 small.png' class='lightview' title="Digger again" rel='gallery[building]'a>
+				<a href='/images/building/foundations small.png' class='lightview' title="Foundations" rel='gallery[building]'a>
+				<a href='/images/building/crane small.png' class='lightview' title="Crane" rel='gallery[building]'a>
+				<a href='/images/building/structure small.png' class='lightview' title="Steel framework" rel='gallery[building]'a>
+				<a href='/images/building/bricks small.png' class='lightview' title="Brickwork going up" rel='gallery[building]'a>
 				<a href='/images/building/sign small.png' class='lightview' title="Sign about building"rel='gallery[building]'a>
 
 			</td>
