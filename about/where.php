@@ -2,7 +2,7 @@
 <div id="main_section">
 	<h2><span>How to find us</span></h2>
 	<div id="directions_div" style="display:none">
-		<iframe name="directions" id="directions" width="800px" height="800px" scroling="yes"></iframe>
+		<iframe name="directions" id="directions" width="800px" height="800px" scrolling="yes"></iframe>
 		<br><input type="button" id="mapNewWindow" value="Open in new window for printing" onclick="mapNewWindow();">
 		<input type="button" id="backToMap" value="Go back to the map" onclick="revealMap();">
 	</div>
@@ -21,7 +21,6 @@
 	    
 		    map.addControl(new GLargeMapControl());
 		    map.addControl(new GOverviewMapControl(new GSize(125,125)));
-			setTimeout("positionOverview()",1);
 	        //setTimeout("positionOverview(890,450)",1);
 		    map.centerAndZoom(new GPoint(-0.399353, 51.64), 4);
 		    
@@ -71,18 +70,6 @@
 		      }
 		      
 		}
-		//function positionOverview(x,y) {
-		function positionOverview() {
-			var omap=document.getElementById("map_overview");
-			//omap.style.left = x+"px";
-			//omap.style.top = y+"px";
-			
-			// == restyling ==
-			omap.firstChild.style.border = "1px solid gray";
-			
-			omap.firstChild.firstChild.style.left="4px";
-			omap.firstChild.firstChild.style.top="4px";
-		}
 
 		function tohere(marker) {
 			marker.openInfoWindowHtml(to_html);
@@ -95,12 +82,16 @@
 			map.addOverlay(marker);
 		  	map.centerAndZoom(new GPoint(-0.399353, 51.6281052), 2);
 			document.getElementById("zoom").value="Zoom back out";
-			document.getElementById("zoom").setAttribute('onclick','zoomOut();');
+			document.getElementById("zoom").onclick= function(){
+				zoomOut();
+			};
 		}
 		function zoomOut(){
 		  	map.centerAndZoom(new GPoint(-0.399353, 51.64), 4);
 			document.getElementById("zoom").value="Zoom in to view South Oxhey";
-			document.getElementById("zoom").setAttribute('onclick','zoomIn();');
+			document.getElementById("zoom").onclick= function(){
+				zoomIn();
+			};
 		}
 		function revealDirections(){
 			document.getElementById("directions_div").style.display = 'block';
